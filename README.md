@@ -31,8 +31,8 @@
 - instalar "RME-win-2.2.msi"
 - para editar o mapa abrir "Baiak Rox 8.60 Criado Por Vinicius\data\world\Baiak Yurots.otbm"
 
-#### para conexão externa:
-- Abrir "http://192.168.0.1" logar sem usuario e sem senha
+#### para conexão externa (varia de caso para caso):
+- Abrir "http://192.168.0.1" logar com seu usuario e senha do modem
 - em "Applications & Gaming - Port Filtering" Enable portas 7171 e 7172
 - em "Applications & Gaming - Port Range Forwarding" Enable portas 7171 e 7172
 
