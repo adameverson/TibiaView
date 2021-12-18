@@ -1,0 +1,990 @@
+#####################################################################################
+Bibliografia: "https://tibiaking.com/forums/topic/15968-tutorialcomandos-para-god/"
+
+Comandos de God:
+
+>/attr
+
+=======================================================================
+
+/attr set text " coloca text em alguma placa.
+
+=======================================================================
+
+/attr eset armor,defense,attack e o numero q deseja.
+
+Armor=Armaduras,Legs,Bots.Helms
+
+Attack=Armas de kina e pally
+
+Defense=Shields e Armas
+
+=======================================================================
+
+/name Player,Player 1(ou o nome q desejar) vc troca seu nome
+
+mais para isso relogue!relogue a account inteira!
+
+=======================================================================
+
+/t vai para o templo
+
+=======================================================================
+
+/t Player leva o player para o templo
+
+=======================================================================
+
+/goto Player ( o nick do char Logico
+
+Por favor logue ou registre-se para ver este/esta image.
+
+/emoticons/default_happy.png" alt="^^">) Vc vai ate o player
+=======================================================================
+
+/c nick do player O player vem ate vc
+
+=======================================================================
+
+/mode pvp dexa o server pvp ou n
+
+=======================================================================
+
+/i cria iten pelo id
+
+Ex=/i 1387
+
+=======================================================================
+
+/owner Player Da a casa para o player
+
+=======================================================================
+
+/ban Player bani o player
+
+=======================================================================
+
+/b fala para o OT td
+
+Ex= /b Oi
+
+=======================================================================
+
+/bc green (ou a cor q qiser em ingles) fala para o server td em verde
+
+=======================================================================
+
+/openserver Abre o server para players
+
+=======================================================================
+
+/closeserver Fecha o server para players
+
+=======================================================================
+
+/m Summona um Bixo (para fazer hunts)
+
+Ex=/m Exp bug
+
+=======================================================================
+
+/s Summona um bixo tipo a magia "utevo res" o bixo te cegue
+
+=======================================================================
+
+/a 1 anda 1 casa para frente
+
+/a 20 anda 20 casas para frente,
+
+ai depende q quantidade de casa q vc quer andar
+
+=======================================================================
+
+/ghost Vc fica Invisivel para players gms,cms,so gods podem te ver,
+
+mais sua fala aparece
+
+=======================================================================
+
+/kick Player kicka um player
+
+=======================================================================
+
+/up sobe para o proximu andar
+
+=======================================================================
+
+/down desce um andar
+
+=======================================================================
+
+/save da save no OT
+
+=======================================================================
+
+/clean limpa o map do OT
+
+=======================================================================
+
+Acess (Acessos) :
+
+6-Todos Os Acess Em 1 Só (GOD)
+
+5-GOD
+
+4-Senior GM
+
+3-GM
+
+2-Senior TuTor
+
+1- TuTor
+
+OPS Para dar uma vaga fale /attr group 6,5,4,3,2,1 tanto faz!
+
+=======================================================================
+
+Para trocar de vocaçao e
+
+/attr vocation 1.2.3.4
+
+=======================================================================
+
+Para fazer um teleport e
+
+/attr destination as coordenadas do lugar como
+
+/attr destination 100 200 300
+
+Para fazer isto e preciso ficar na frente do potal!
+
+By:ADM-Bull (Nao sou eu)
+
+#####################################################################################
+Bibliografia: "https://tibiaking.com/forums/topic/16883-comandos-god-cm-gm-player/"
+
+Este tutorial contém todos os comandos do Tibia 8.6,mas não tem todos completamente,mas oque eu lembrar eu coloco,e contem todas as informações possíveis sobre os comandos. Vale lembrar também que alguns OTServers podem ter mais ou menos comandos, dependendo da versão e que nem todos tem o mesmo nome. Os comandos estão divididos por acesso e para saber se você pode executá-lo, deve-se seguir a seguinte ordem:
+
+GOD > Community Manager > Gamemaster > Senior Tutor > Tutor > Player, ou seja, GOD executa comandos de Gamemaster, mas Gamemaster não executa comandos de GOD, obviamente.
+
+Sem mais delongas, aperte logo Ctrl + F e procure o seu comando, ou leia todos :}
+
+GOD'S
+
+- /addskill
+
+O que é?: Comando para adicionar skills nos players.
+
+Como usar?: Basta adicionar o nome do player e o skill desejado no comando.
+
+Modelos: level/magic/fist/club/sword/axe/distance/shielding/fishing
+
+Exemplos:
+
+/addskill Level, Lord Paulistinha = +1 de Sword
+
+/addskill Magic, Lord Paulistinha = +30 de Magic
+
+- /attr
+
+O que é?: Bem, com este comando você pode fazer praticamente tudo, desde editar items, monstros até players, direto do seu GOD.
+
+Como usar?: Basta escrever o comando colocando o modelo e o valor, é preciso ficar na frente do item/monstro/player para editá-lo.
+
+Modelos:
+
+*Items
+
+set
+
+erase
+
+action/actionid/aid
+
+unique/uniqueid/uid
+
+destination/position/pos/destpos
+
+* Monstros
+
+health
+
+maxhealth
+
+mana
+
+maxmana
+
+basespeed
+
+droploot
+
+lossskill
+
+cannotmove
+
+skull
+
+speaktype
+
+* Players
+
+fyi
+
+tutorial
+
+guildrank
+
+guildnick
+
+group
+
+vocation
+
+sex
+
+stamina
+
+town
+
+balance
+
+marriage
+
+rates
+
+resetidle
+
+execute
+
+saving
+
+Exemplos:
+
+/attr set defense 35 = Adiciona +35 de defesa ao item.
+
+/attr set group 6 = Adiciona group6 ao player, ou seja, adiciona GOD ao player.
+
+- /serverdiag
+
+O que é?: Mostra informações do servidor, como nº de players, NPCs, Monstros e outras informações mais avançadas.
+
+Como usar?: Basta executar o comando /serverdiag
+
+- /closeserver
+
+O que é?: Comando que serve para fechar o servidor para players, sendo possivel a entrada apenas de GOD/GM/CM/Tutores.
+
+Como usar?: Basta executar o comando /closeserver
+
+- /openserver
+
+O que é?: Serve para abrir o servidor, quando ele tiver sido fechado com o comando anterior.
+
+Como usar?: Basta executar o comando /openserver
+
+- /promote
+
+- /demote
+
+O que é?: Promote acrescenta um nível de acesso à tal player, enquanto Demote diminui.
+
+Como usar?: Basta executar o comando /promote ou /demote seguido pelo nome do player.
+
+Exemplos:
+
+/promote Lord Paulistinha
+
+/demote Lord Paulistinha
+
+- /shutdown
+
+O que é?: Salva e fecha o servidor.
+
+Como usar?: Basta executar o comando /shutdown seguido de um dos modelos abaixo (opcional).
+
+Modelos: tempo/kill/stop
+
+Exemplos:
+
+/shutdown 5 = Salva e fecha o server depois de 5 minutos.
+
+/shutdown stop = Para a ação de fechar o server.
+
+/shutdown kill = Fecha o server sem salvar.
+
+- /mode
+
+O que é?: Muda o tipo de PVP.
+
+Como usar?: Basta executar o comando junto com um dos modelos abaixo.
+
+Modelos: nopvp/pvp/pvpenforced
+
+Exemplo:
+
+/mode pvpenforced
+
+- /info
+
+O que é?: Mostra informações detalhadas sobre determinado player.
+
+Como usar?: Basta executar o comando /info seguido do nome do player.
+
+Exemplo:
+
+/info Lord Paulistinha
+
+OBS: Só funciona com o player online.
+
+Community Manager's
+
+- /s
+
+O que é?: Sumona um Monstro.
+
+Como usar?: Basta executar o comando /s seguido do nome do monstro desejado.
+
+Exemplo:
+
+/s Dragon
+
+OBS: O monstro sumonado é comandado por você.
+
+- /n
+
+O que é?: Cria um NPC existente.
+
+Como usar?: Basta executar o comando /n seguido do nome do NPC desejado.
+
+Exemplo:
+
+/n Perac
+
+- /m
+
+O que é?: Cria um Monstro existente.
+
+Como usar?: Basta executar o comando /m seguido do nome do Monstro desejado
+
+Exemplos:
+
+/m Dragon
+
+/m Rat, Lord Paulistinha = Cria um rato na posição do player.
+
+- /reload
+
+O que é?: Recarrega scripts e valores.
+
+Como usar?: Basta executar o comando /reload seguido de um dos modelos descritos abaixo.
+
+Modelos: actions/channels/config/creatureevents/gameservers/globalevents/groups/highscores/
+
+houseprices/items/monsters/moveevents/npcs/outfits/quests/raids/spells/stages/talkactions/vocations/weapons/all Exemplos:
+
+/reload spells = Recarrega as spells
+
+/reload all = Recarrega tudo.
+
+- /raid
+
+O que é?: Executa uma Raid
+
+Como usar?: Basta executar o comando /raid seguido do nome da raid existente.
+
+- /newtype
+
+O que é?: Você pode alternar entre todos os outfits disponíveis no servidor.
+
+Como usar?: Basta executar o comando /newtype seguido de um valor entre 2 e 351*
+
+* Este valor pode mudar a cada update, pois são adicionados novos outfits.
+
+- /r
+
+O que é?: Remove o tile ou criatura que estiver a sua frente.
+
+Como usar?: Basta executar o comando /r seguido de um dos modelos descritos abaixo, ou não.
+
+Modelos: valor/all
+
+Exemplos:
+
+/r = Deleta 1 tile a sua frente.
+
+/r all = Deleta todos os tiles a sua frente.
+
+/r 5 = Deleta 5 tiles a sua frente.
+
+- /owner
+
+O que é?: Modifica o dono de alguma casa.
+
+Como usar?: Entre na casa e execute o comando /owner seguido do nome do player e/ou de um dos modelos descritos abaixo.
+
+Modelos: player/none
+
+Exemplos:
+
+/owner Lord Paulistinha, yes = Modifica o dono e limpa a casa.
+
+/owner Lord Paulistinha, no = Modifica o dono sem limpar a casa.
+
+/owner none = A casa fica sem dono
+
+- /storage
+
+O que é?: Mostra ou modifica o Storage de algum player.
+
+Como usar?: Basta executar o comando /storage seguido do nome do player e o StorageValue.
+
+Exemplos:
+
+/storage Lord Paulistinha, 20025 = Mostra valor da storage 20025
+
+/storage Lord Paulistinha, 20025,1 = Define valor para 1
+
+- /config
+
+O que é?: Mostra valores no Config.lua.
+
+Como usar?: Basta executar o comando /config seguido de um dos valores que existem no config.lua.
+
+Exemplos:
+
+/config ip
+
+/config mapAuthor
+
+/config whiteSkullTime
+
+OBS: Case Sensitive (Maiúsculas são Maiúsculas e minúsculas são minúsculas)
+
+- /i
+
+O que é?: Cria um item existente.
+
+Como usar?: Basta executar o comando /i seguido do nome ou ID do item.
+
+Exemplos:
+
+/i Golden Armor = 1 Golden Armor
+
+/i 2466 = 1 Golden Armor
+
+/i skull, 50 = 50 Skulls
+
+- /z
+
+O que é?: Mostra um Efeito Mágico.
+
+Como usar?: Basta digitar o comando /z seguido de um valor entre 0 e 68*.
+
+* A quantidade de efeitos pode mudar a cada update.
+
+- /x
+
+O que é?: Mostra um Efeito de Animação.
+
+Como usar?: Basta digitar o comando /x seguido de um valor entre 0 e 41*.
+
+* A quantidade de efeitos pode mudar a cada update.
+
+- /y
+
+O que é?: Mostra um texto animado em cores diferentes. Pode ser útil na definição de cores de alguns scripts.
+
+Como usar?: Basta digitar o comando /y seguido do código do número e/ou um texto.
+
+Exemplos:
+
+/y 50
+
+/y 50, Olá :]
+
+- /bc
+
+O que é?: Mensagem para todos, colorida.
+
+Como usar?: Basta digitar o comando /bc seguido pelo código da cor e o texto.
+
+Modelos: advance/event/white/orange/info/green/small/blue/red/warning/status
+
+Exemplos:
+
+/bc green Olá :]
+
+/bc green, Olá :]
+
+/bc Olá :]
+
+- /mkick
+
+O que é?: Desloga vários players
+
+Como usar?: Basta executar o comando mkick seguido pelo Range X e o Range Y
+
+Exemplo:
+
+/mkick 5,5 = Desloga todos os players em uma área 5x5 SQM.
+
+Gamemaster's
+
+- /ghost
+
+O que é?: Habilitar ou desabilitar invisibilidade para Players.
+
+Como usar?: Basta executar o comando /ghost para ativar ou executar novamente para desativar.
+
+- /squelch
+
+O que é?: Habilita ou desabilita o bloqueio de Mensagens Privadas.
+
+- /cliport
+
+O que é?: Você é teleportado para onde você clica.
+
+Como usar?: Basta executar o comando /cliport para ativar ou desativar.
+
+- /t
+
+O que é?: Teleporta para o templo.
+
+Como usar?: Basta executar o comando /t para teleportar você ou outro player para o templo.
+
+Exemplos:
+
+/t
+
+/t Lord Paulistinha
+
+- /c
+
+O que é?: Teleporta um Player ou Monstro para você.
+
+Como usar?: Basta executar o comando /c seguido pelo nome do player ou monstro desejado.
+
+Exemplos:
+
+/c Lord Paulistinha
+
+/c Demon
+
+- /goto
+
+O que é?: Teleporta você para um player/posição/lugar
+
+Exemplos:
+
+/goto 100, 40, 7 = Teleporta você para a posição no mapa.
+
+/goto Dragon
+
+/goto Lord Paulistinha
+
+- /a
+
+O que é?: Teleporta você a uma distância desejada.
+
+Exemplos:
+
+/a 5
+
+/a 5, Lord Paulistinha = Teleporta você a 5 SQMs do player.
+
+- /kick
+
+O que é?: Faz logout num player.
+
+Como usar?: Basta executar o comando /kick seguido pelo nome do player desejado.
+
+- /send
+
+O que é?: Manda um player/monstro para determinada posição.
+
+Exemplos:
+
+/send Lord Paulistinha; 100, 40, 7
+
+/send Lord Paulistinha, dragon
+
+- /unban
+
+O que é?: Desfaz o banimento de um determinado player ou account.
+
+Exemplo:
+
+/unban 123456
+
+/unban Lord Paulistinha
+
+- /town
+
+O que é?: Envia você ou algum player para a Cidade Natal.
+
+Exemplos:
+
+/town Carlin
+
+/town carlin, Lord Paulistinha
+
+- /up
+
+- /down
+
+O que é?: Sobe ou desce um ou vários andares no mapa.
+
+Como usar?: Use o comando /up para subir e o /down para descer.
+
+Exemplos:
+
+/up
+
+/up 3
+
+/down
+
+/down 3
+
+- /save
+
+O que é?: Salva o servidor.
+
+- /clean
+
+O que é?: Limpa o mapa.
+
+Exemplos:
+
+/clean = limpa o mapa imediatamente.
+
+/clean 5 = limpa o mapa em 5 minutos.
+
+/clean tile = limpa apenas o tile onde você está.
+
+- /reports
+
+O que é?: Mostra os reports feitos pelos players.
+
+Exemplos:
+
+/reports = Mostra todos os reports.
+
+/reports 30 = Mostra apenas o report de tal id.
+
+- /mc
+
+O que é?: Procura players ativos em um mesmo IP.
+
+Exemplos:
+
+/mc = Mostra todos os jogadores com mesmo IP.
+
+/mc 127.0.0.1 = Mostra apenas players com o IP 127.0.0.1.
+
+/mc Lord Paulistinha = Mostra todos os players com o mesmo ip de um player.
+
+Senior Tutor's
+
+- /wp
+
+O que é?: Mostra os Waypoints do mapa.
+
+- /notations
+
+O que é?: Mostra as Notations de certo player.
+
+Exemplo:
+
+/notations Lord Paulistinha
+
+- /gethouse
+
+O que é?: Mostra o nome da casa de certo player e/ou teleporta.
+
+Exemplos:
+
+/gethouse Lord Paulistinha = Mostra apenas o nome da casa.
+
+/gethouse Lord Paulistinha = Mostra o nome da casa e teleporta.
+
+- /b
+
+O que é?: Manda uma mensagem para todos do servidor.
+
+Exemplo:
+
+/b Olá :]
+
+Tutor's
+
+- /baninfo
+
+O que é?: Mostra uma informação detalhada sobre o banimento de certo player.
+
+Exemplo:
+
+/baninfo Lord Paulistinha
+
+- /pos
+
+O que é?: Mostra a posição do player que usa.
+
+Players
+
+- !frags
+
+O que é?: Mostra o número de frags do player e o tempo.
+
+- !online
+
+O que é?: Mostra uma lista de jogadores online.
+
+- !uptime
+
+O que é?: Mostra o tempo que o servidor está online.
+
+- !pvp
+
+O que é?: Mostra o World type.
+
+- !q
+
+O que é?: Mostra a quantidade de dinheiro que o player possiu no inventário.
+
+- !serverinfo
+
+O que é?: Mostra informações detalhadas sobre o servidor, como Exp Rate e Skill Rate, por exemplo.
+
+- /commands
+
+O que é?: Mostra todos os comandos que o player tem acesso.
+
+Glossário:
+
+Lord Paulistinha = Exemplo de nome de um player.
+
+OBS: Caso encontre alguma informação errada ou inexistente, informe ao criador do tópico.
+
+#####################################################################################
+Bibliografia: "https://www.nerdbb.com/todos-os-comandos-de-god-gm-cm-tibia-t40288.html"
+
+/attr set text "ESCRITO EM PLACAS
+destination (altera informações em magic forcefields (TPs))
+health (altera a saúde em jogadores)
+mana (altera a mana em jogadores)
+group (altera o grupo do personagem)
+sex (altera o _____ do personagem)
+attack (altera o ataque da arma)
+defense (altera a defesa do escudo)
+armor (altera o armor da armadura)
+
+Fórmula:
+/attr subcomando quantidade.
+
+Exemplos: 
+/attr group 6
+/attr attack 500
+/attr health 50
+
+/attr action =fiq na frente da porta e mude o level da porta ex: /attr action 1030 quando for esse numero o level nessesario é 10 
+e se for esse numero /attr action 10100 quer dizer q o level minimo é 100.
+/attr destination =faça um teleport e depois digite /attr destination 1 1 1 nos lugar do 1 1 1 q eu colokei coloke as coordenadas q vc quiser ex: /attr destination 159 455 7
+q seu teleport va.
+/attr skull group 0 =TIRA O PK ReD
+/attr defense 99 = edita um shield q vc quiser,tem q estar na frente do shield.
+/attr attck 99 = edita uma arma, tem q estar na frente da arma.
+/att armor 99 = edita uma armadura, tem q estar na frente da armadura.
+
+/attr name NOME <--- Muda o nome de um iten. Nao pode ter espaço.
+/attr group 5 <---- 5 GOD, 4 cm, 3 gm, 2 SENIOR TUTOR, 1 TUTOR.
+/attr skull 5 <---- 5 black, 4 red, 3 white, 2 green, 1 yellow, 0 nenhuma.
+/attr desc DESCRIÇAO
+/attr attackspeed 50
+/attr protection <--- nao sei oque fas direito
+/attr droploot <---- nao dropa o loot do bixo
+/attr cannotmove <---- o bixo na move
+/attr vocation 1 <--- 1 = Sorcerer, 2 = Druid, 3 = Paladin, 4 = Knight.
+
+/a ( x )-> pula pisos (exp: /a 2 - pula 2 pisos) 
+
+/B (msg)ou #b (msg) -> msg vermelha pro serve todo (existe ot que é assim) 
+
+/b (name) -> bani ip do player 
+
+/ban (name) ->bani character 
+
+/c (name) -> puxa um players qalquer 
+
+/i (+ id + quantidade) -> para criar item (exp:/i 3255 1) 
+
+
+/m (name)-> sumona monstro (exp:/m Demon) 
+
+/summon (name) -> sumona tbm, só que não tm loot e em algns ots, nem da experiencia 
+
+/t (qlqh letra) -> te leva pro templo (exp:/t a) 
+
+/goto (name) -> vai até o player 
+
+/info (name) -> ve sobre o player 
+
+/closeserver -> só gms podem entrar no server 
+
+/openserver -> todos podem entrar 
+
+/getonline -> ver quem está online e lvl 
+
+/kick (name) -> kick player 
+
+/up vai pro andar de cima 
+
+/down andar de baixo.. 
+
+/invisible só gms podem te ver 
+
+/pvp x set pvp to no=0, normal=1, enforced=2 
+
+/owner (name) dá a casa para alguem 
+
+/send (name), x y z teleporta o player pro lugar... 
+
+
+Player Comandos: 
+!exp mostra exp pro proximo lvl 
+!mana mostra mana pro proximo lvl 
+!online mostra os players online 
+!house reload house rights 
+!frags ver quantos você mato 
+!report msg se achar um bug pode mostrar ele por hoster 
+Control + Z faz o mesmo que !report
+
+
+
+
+otras coisas
+
+/a x (x = numero de quadrados que vc quer pular ex: /a 3 ) 
+
+/b player (banir por ip um player ex:/b guilhermetell) 
+
+/c player (faz com que um player venha ate você ex: /c guilhermetell) 
+
+/goto player ou x y z (com este vc vai ate um player ou ate as corcenadas x y z de um espaço ex1:/goto guilhermetell ex2:/goto 160 54 7) 
+
+/m monstro (coloka um monstro no jogo a sua escolha ex:/m demon) 
+
+/B (essa tem que ser maiuscula, com essa vc pode mandar akelas msg em vermelho para todos os players) 
+
+/ban player (com essa vc apenas bane um player ex: /ban guilhermetell) 
+
+/invisible (com este vc fika invisivel..para voltar a ser visivel use ele de novo) 
+
+/s nome do npc (copia qualquer npc do jogo e faz com que ele apareça na sua frente..o npc nuam saira de sual loja..mas tera uma copia criada aonde vc quiser) 
+
+/owner nome do cara (com essa vc da uma casa para um player..vc tem que estar dentro da casa para usa-lo ex: /owner Guilhermetell nesse comando as letras maiusculas e minusculam saum necessarias) 
+
+/kick nome do cara (kicka um player...ex: /kick guilhermetell) 
+
+/t (volta para o templo) 
+
+/getonline (com esse vc sabe uem ta on e os lvls deles e quantos taum online) 
+
+/pos (saiba os x..y..z de onde vc esta) 
+
+/closeserver (deixe o server apenas para gms) 
+
+/openserver (abra o server para o público) 
+
+/info nome do player (receba o lvl..nome..ml e velocidade de um player so funciona para players que estejam on-line ex: /info guilhermetell) 
+
+/up (suba um andar) 
+
+/down (desça um andar) 
+
+/i 0000 ( o 0000 seria o id dos items 
+
+/i 0000 1<-- qntidades 
+/\ id 
+
+/s nome do npc (copia qualquer npc do jogo e faz com que ele apareça na sua frente..o npc nuam saira de sual loja..mas tera uma copia criada aonde vc quiser) 
+
+
+/addskill skull, magic 
+
+>>gente o comando de add level 
+/addskill (nome do char),Level 
+
+>>magic level 
+/addskill (nome do char),Magic 
+
+skill
+tipow eh soh por sword no final
+^^ 
+
+
+/bc white (Fala em Branco) 
+
+
+
+
++++++++ dicas 
+
+
+/a 1 - anda 1 quadrado e assim vai 
+/b nick - banir o ip de alguem 
+/ban nick - bani o char de alguem 
+/c nick - teleporta a pessoa até vc 
+/t - teleporta vc ao templo 
+/m monstro - summona algum monstro 
+/n item 1 - faz o item 
+/i ID de algum item 1 - faz o item ... 
+/save - salva o OT 
+/closeserver - fecha o server 
+/openserver - abre o server 
+/goto nick ou monstro - vai até a pessoa desejada ou o monstro desejado 
+#b msg - Manda msg em vermelho 
+/B msg - manda msg em vermelho 
+/addskill nick,experience 1 - da level para o nick desejado 
+/addskill nick,skill 1 - da o skill desejado ao nick desejado 
+/s nome do NPC - cria um NPC ao seu lado 
+/info nick - ve as informações do nick desejado 
+/kick nick - kicka a pessoa 
+/up - vai para o andar de cima 
+/down - vai para o andar dee baixo 
+/getonline - ve quantas pessoas está online no ot e ve os levels das pessoas 
+/invisible - fica invisivel 
+/pvp 0 - Decha o OT Non-Pvp 
+/pvp 1 - Decha o OT PvP 
+/pvp 2 - Decha o OT Pvp-Enforced 
+/owner nick - da a casa para alguem (só funcionará se estiver dentro de alguma casa) 
+/send nick - pos. x pos. y pos. z teleporta a pessoa para a posição desejada 
+
+
+
+++++++++++ 
+
+
+
+/a 1 - anda 1 quadrado e assim vai 
+/b nick - banir alguem 
+/c nick - teleporta a pessoa até vc 
+/t - teleporta vc ao templo 
+/m monstro - summona algum monstro 
+/n item 1 - faz o item 
+/i ID de algum item 1 - faz o item ... 
+/save - salva o OT 
+/closeserver - fecha o server 
+/openserver - abre o server 
+/goto nick - vai até a pessoa 
+#b msg - Manda msg em vermelho 
+/B msg - manda msg em vermelho 
+/addskill nick,experience 1 - da level para o nick desejado 
+/addskill nick,skill 1 - da o skill desejado ao nick desejado 
+
+Atencao:nao sao em todos os server que funcionam todos os comandos.
+
+Ctrl + L ou Q - Logout
+
+Obs.2: Para ver todos os comandos do seu OT abra o arquivo commands dentro da pasta data.
