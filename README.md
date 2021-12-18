@@ -35,3 +35,6 @@
 - Abrir "http://192.168.0.1" logar sem usuario e sem senha
 - em "Applications & Gaming - Port Filtering" Enable portas 7171 e 7172
 - em "Applications & Gaming - Port Range Forwarding" Enable portas 7171 e 7172
+
+![image](https://user-images.githubusercontent.com/24993219/146625707-d7722bcc-7ccc-4d59-bd4a-927f4d65de48.png)
+
