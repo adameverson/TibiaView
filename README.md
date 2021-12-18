@@ -36,5 +36,10 @@
 - em "Applications & Gaming - Port Filtering" Enable portas 7171 e 7172
 - em "Applications & Gaming - Port Range Forwarding" Enable portas 7171 e 7172
 
+#### imagem do jogo
 ![image](https://user-images.githubusercontent.com/24993219/146625707-d7722bcc-7ccc-4d59-bd4a-927f4d65de48.png)
+
+#### imagem do server
+![image](https://user-images.githubusercontent.com/24993219/146625809-ef8887a3-2f91-45e6-a829-b03e3f758de0.png)
+
 
