@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The reaper" nameDescription="the reaper" race="undead" experience="17500" speed="330" manacost="0">
+	<health now="112500" max="112500"/>
+	<look type="300" corpse="8955"/>
+	<targetchange interval="7000" chance="15"/>
+	<strategy attack="100" defense="0"/>  
+	
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>	
+	</flags>  
+	
+	<attacks>
+		<attack name="melee" interval="2000" skill="175" attack="205"/>
+		<attack name="death" interval="3000" chance="15" range="7" target="1" min="-300" max="-600">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="death" interval="3000" chance="15" radius="7" target="0"  min="0" max="-1200">
+			<attribute key="areaEffect" value="smallclouds"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="10" radius="6" target="0" min="0" max="-795">
+			<attribute key="areaEffect" value="whitenote"/>
+		</attack>
+		<attack name="death" interval="1000" chance="8" length="3" spread="7" min="-450" max="-550">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="12" range="5" target="1" speedchange="-700">
+			<attribute key="areaEffect" value="purplenote"/>
+		</attack>
+	</attacks> 
+	
+	<defenses armor="45" defense="40">
+		<defense name="healing" interval="3000" chance="5" min="4500" max="8500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="4000" chance="20" speedchange="430"/>
+	</defenses>
+  
+	<elements>
+		<element energyPercent="-5"/>
+		<element icePercent="20"/>
+		<element holyPercent="-30"/>
+		<element firePercent="-15"/>
+	</elements>	
+	
+	<immunities>
+		<immunity earth="1"/>
+		<immunity lifedrain="1"/>
+		<immunity death="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	
+	<summons maxSummons="3">
+		<summon name="Grim reaper" interval="5000" chance="35"/>
+	</summons>
+  
+	<voices interval="5000" chance="12">
+		<voice sentence="Come closer there's nothing to fear!" />
+		<voice sentence="Foolish Humans... Don't you realize its impossible to kill death itself!" yell="1"/>
+		<voice sentence="This will be your last breath"/>
+		<voice sentence="All mortals will perish!"/>
+		<voice sentence="Your souuul willl be MINEE!" yell="1"/>
+		<voice sentence="THE END IS NEAR!" yell="1"/>
+	</voices>
+  
+	<loot>
+		<item id="2150" countmax="20" chance1="10000"/>	-- small amethyst
+		<item id="2144" countmax="26" chance1="13000"/> --Black PEarl
+		<item id="6500" countmax="4" chance1="12500"/>	-- demonic essence'
+		<item id="8852" chance="10500"/>			-- Devileye
+		<item id="8865" chance="8500"/> --Dark lord cape
+		<item id="8927" chance="50000"/> --Dark trinity mace
+		<item id="2148" countmax="90" chance1="100000"/>	-- gold coin
+		<item id="2148" countmax="90" chance1="80000"/>	-- gold coin
+		<item id="2152" countmax="40" chance1="45000"/>	-- Platinum Coin
+		<item id="5927" chance="100000">
+    		<inside>
+				<item id="5904" countmax="60" chance1="9000"/> --Soul Orbs 
+				<item id="8903" chance="16500"/> --Spellbook of lost souls
+				<item id="8889" chance="6000"/>	-- skullcracker armor
+				<item id="8885" chance="7777"/> --Divine Plate
+				<item id="8932" chance="50000"/> -- The calamity
+				<item id="8910" chance="8500"/>	--underworld rod
+				<item id="8473" chance="12000"/> -- ultimate health potion
+				<item id="7590" chance="12000"/> -- GMP
+			</inside>
+		</item>
+	</loot>
+</monster>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spirit of Jack" nameDescription="a spirit" race="blood" experience="175" speed="230" manacost="495">
+  <health now="7025" max="7025"/>
+  <look type="96" head="0" body="0" legs="0" feet="0" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="0"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<attacks>
+    <attack name="melee" interval="2000" skill="60" ttack="70"/>
+    <attack name="fire" interval="800" chance="13" range="1" radius="1" target="1" min="-400" max="-600">
+	<attribute key="areaEffect" value="explosion"/>
+    </attack>
+</attacks>
+  <defenses armor="25" defense="23"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <loot>
+    <item id="2148" countmax="53" chance1="50000" chancemax="0"/>
+    <item id="2483" chance="10000"/>
+    <item id="5918" chance="6666"/>
+    <item id="6095" chance="5000"/>
+    <item id="5710" chance="2500"/>
+    <item id="5553" chance="2500"/>
+    <item id="5927" chance="100000">
+      <inside>
+        <item id="5091" chance="1666"/>
+        <item id="2509" chance="4000"/>
+        <item id="5792" chance="3333"/>
+        <item id="2376" chance="6666"/>
+        <item id="6126" countmax="1" chance1="3000" chancemax="0"/>
+        <item id="6098" countmax="1" chance1="3000" chancemax="0"/>
+        <item id="6097" countmax="1" chance1="3000" chancemax="0"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

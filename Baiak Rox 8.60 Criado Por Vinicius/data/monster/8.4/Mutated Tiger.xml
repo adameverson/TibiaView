@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mutated Tiger" nameDescription="a mutated tiger" race="blood" experience="750" speed="245" manacost="0">
+	<health now="1100" max="1100"/>
+	<look type="318" corpse="9913"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="100"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="70" attack="60"/>
+		<attack name="physical" interval="3000" chance="20" length="5" spread="3" min="0" max="-130">      
+			<attribute key="areaEffect" value="yellowspark"/>    
+		</attack> 	
+	</attacks>
+	<defenses armor="35" defense="35">
+		<defense name="invisible" interval="4000" chance="10" duration="2">
+			<attribute key="areaEffect" value="poff"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="8" min="60" max="130"/>
+	</defenses>
+	<elements>
+		<element firePercent="20"/>
+		<element energyPercent="20"/>
+		<element icePercent="20"/>
+		<element deathPercent="-5"/>
+		<element earthPercent="80"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2500" chance="10">
+		<voice sentence="GRAAARRRRRR"/>
+		<voice sentence="CHHHHHHHHHHH"/>
+	</voices>
+  <loot>
+    <item id="2148" countmax="70" chance1="100000" chancemax="0"/> -- Gold
+	<item id="2148" countmax="30" chance1="100000" chancemax="0"/> -- Gold
+    <item id="2666" countmax="4" chance1="20000" chancemax="0"/> -- meat
+    <item id="7588" chance="2000"/> --shp
+    <item id="1987" chance="100000"> -- Bag
+      <inside>
+        <item id="2509" countmax="1" chance1="4000"/> --steel shield
+		<item if="2671" countmax="2" chance1="8000"/>
+        <item id="2515" chance="500"/> --guardian shield
+		<item id="2168" chance="4500"/> --life ring        
+        <item id="7454" chance="1200"/> --glorius axe
+        <item id="7436" chance="250"/> --angelic axe
+      </inside>
+    </item>
+  </loot>
+</monster>

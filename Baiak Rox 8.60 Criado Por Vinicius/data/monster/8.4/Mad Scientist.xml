@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mad Scientist" nameDescription="a mad scientist" race="blood" experience="205" speed="220" manacost="0">
+	<health now="325" max="325"/>
+	<look type="133" head="97" body="0" legs="38" feet="97" addons="1" corpse="6080"/>
+	<targetchange interval="5000" chance="30"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" attack="25" skill="35"/>
+		<attack name="drown" interval="1000" chance="14" range="7" target="1" min="-20" max="-56">
+			<attribute key="shootEffect" value="arrow"/>
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		<attack name="energy" interval="2000" chance="20" target="1" range="5" min="-20" max="-35">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+		<attack name="speed" interval="3000" chance="10" range="7" target="1" duration="4000" speedchange="-300">     
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack> 
+	</attacks>
+	<defenses armor="25" defense="20">
+		<defense name="healing" interval="1000" chance="25" min="10" max="30">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="10"/>
+		<element earthPercent="20"/>
+		<element energyPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="20"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity drown="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Die in the name of Science!"/>
+		<voice sentence="I will study your corpse"/>
+		<voice sentence="You will regret interrupting my studies!"/>
+		<voice sentence="Let me test this!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="70" chance1="100000" chancemax="0"/> --Gold
+		<item id="2148" countmax="50" chance1="100000" chancemax="0"/> -- Gold
+		<item id="2787" countmax="3" chance1="1500" /> -- white mushroom
+		<item id="2308" chance="3500"/> --Powder Herb
+		<item id="7620" chance="12500"/> --mp
+		<item id="7618" chance="12500"/> --HP
+		<item id="2687" countmax="5" chance1="400" /> -- cookie
+		<item id="1987" chance="100000"> -- Bag
+			<inside>
+				<item id="7762" countmax="1" chance1="800"/> -- Small Enchanted Amethyst
+				<item id="2177" chance="1600"/> --Life Crystal
+				<item id="6324" chance="500"/> --cream cake        
+				<item id="2162" chance="500"/> --Magic LightWand
+				<item id="2190" chance="100"/> --WoV
+				<item id="7440" chance="250"/> --MM P
+			</inside>
+		</item>
+	</loot>
+</monster>

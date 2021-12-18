@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Captain Cutler" nameDescription="a captain cutler" race="blood" experience="450" speed="530" manacost="775">
+  <health now="15000" max="15000"/>
+  <look type="98" head="0" body="0" legs="0" feet="0" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+    <attacks>
+    <attack name="melee" interval="2000" skill="70" attack="65"/>
+    <attack name="physical" interval="2000" chance="25" range="7" min="-1500" max="-2100">
+      <attribute key="shootEffect" value="throwingstar"/>
+   </attack>
+    <attack name="melee" interval="1000" chance="30" range="7" radius="3" target="0" min="-500" max="-600">
+    </attack>
+</attacks>
+  <defenses armor="25" defense="20"/>
+    <defense name="healing" interval="1500" chance="15" min="530" max="840">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+        <defense name="speed" interval="1000" chance="8" speedchange="600" duration="5000">
+      <attribute key="areaEffect" value="redshimmer"/>
+   </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="0"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="8">
+    <summon name="Spirit of Jack" interval="2000" chance="12"/>
+  </summons>
+  <loot>
+    <item id="2148" countmax="80" chance1="50000" chancemax="0"/>
+    <item id="2385" chance="9000"/>
+    <item id="2489" chance="1333"/>
+    <item id="2521" chance="1400"/>
+    <item id="6096" chance="1000"/>
+    <item id="6095" chance="2500"/>
+    <item id="5926" chance="100000">
+      <inside>
+        <item id="5091" chance="1666"/>
+        <item id="5462" chance="450"/>
+        <item id="5792" chance="3333"/>
+        <item id="2376" chance="5555"/>
+        <item id="6098" countmax="1" chance1="5000" chancemax="0"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

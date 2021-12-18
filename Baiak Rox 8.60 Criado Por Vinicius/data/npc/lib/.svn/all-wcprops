@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/private/forgottenserver/!svn/ver/2522/trunk/data/npc/lib
+END
+merchant.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/private/forgottenserver/!svn/ver/1/trunk/data/npc/lib/merchant.xml
+END
+npc.lua
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/private/forgottenserver/!svn/ver/2522/trunk/data/npc/lib/npc.lua
+END
+postman.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/private/forgottenserver/!svn/ver/47/trunk/data/npc/lib/postman.xml
+END
+bankman.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/private/forgottenserver/!svn/ver/47/trunk/data/npc/lib/bankman.xml
+END

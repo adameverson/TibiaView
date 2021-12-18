@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<monster name="Nightstalker" description="a nightstalker" experience="1010" speed="260" race="undead">
+	<health now="2100" max="2100"/>  
+	<strategy attack="100" defense="0"/>  
+	<targetchange speed="0" chance="8"/>  
+	<look type="320" corpse="9915"/>  
+	<flags>    
+		<flag canpushitems="1"/>   
+		<flag canpushcreatures="1"/>    
+		<flag hostile="1"/>    
+		<flag attackable="1"/>    
+		<flag pushable="0"/>    
+		<flag staticattack="90"/>    
+		<flag targetdistance="1"/>  
+	</flags>  
+	<attacks>    
+		<attack name="melee" interval="2000" attack="48" skill="53"/>     
+		<attack name="speed" interval="3000" chance="10" range="7" target="1" duration="30000" speedchange="-600">      
+			<attribute key="areaEffect" value="redshimmer"/>    
+		</attack> 
+		<attack name="lifedrain" interval="3000" chance="10" range="1" target="1" min="-90" max="-180">
+			<attribute key="areaEffect" value="holyarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="55">
+		<defense name="speed" interval="1000" chance="15" speedchange="200" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="invisible" interval="5000" chance="20" duration="5000"> 
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="outfit" interval="2000" chance="4" monster="werewolf" duration="6000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="outfit" interval="2000" chance="10" monster="the count" duration="6000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="outfit" interval="2000" chance="8" monster="grim reaper" duration="6000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="outfit" interval="2000" chance="15" monster="tarantula" duration="6000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="outfit" interval="2000" chance="2" monster="ferumbras" duration="6000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="-5"/>
+		<element energyPercent="-5"/>
+		<element deathPercent="-5"/>
+		<element icePercent="20"/>
+		<element holyPercent="20"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/> 
+	</immunities> 
+		<voices speed="5000" chance="10">    
+		<voice sentence="The sunlight is so depressing." yell="1"/>    
+		<voice sentence="Come with me, my child." yell="1"/>    
+		<voice sentence="I've been in the shadow under your bed last night." yell="1"/>    
+		<voice sentence="You never know what hides in the night."/>    
+		<voice sentence="I remember your face - and I know where you sleep"/>  
+	</voices>   
+	<loot>
+		<item id="2148" countmax="75" chance1="100000" chancemax="0"/> -- Gold
+		<item id="2148" countmax="55" chance1="100000" chancemax="0"/> -- Gold
+		<item id="2804" chance="13000"/> --shadow herb
+		<item id="7589" chance="2200"/> --smp
+		<item id="1987" chance="100000"> -- Bag
+			<inside>
+				<item id="2124" chance="3000"/> --crystal ring
+				<item id="2200" chance="2222"/> --protection amulet
+				<item id="2171" chance="800"/> --platinum amulet
+				<item id="8870" chance="1300"/> --spirit cloak
+				<item id="7407" chance="600"/> --haunted blade        
+				<item id="7427" chance="200"/> --chaos mace
+				<item id="9942" chance="500"/> --crystal of balance
+				<item id="2195" chance="200"/> --boh
+			</inside>
+		</item>
+	</loot>
+</monster>

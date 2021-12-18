@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Son of Verminor" nameDescription="the Son of Verminor" race="venom" experience="5900" speed="220" manacost="0">
+	<health now="8500" max="8500"/>
+	<look type="19" corpse="1496"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="95" attack="100"/>
+		<attack name="poison" interval="2000" chance="15" range="7" min="-145" max="-300">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>	
+		<attack name="poison" interval="2000" chance="10" range="7" radius="3" target="0" min="-115" max="-600">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="23" defense="32" >
+		<defense name="outfit" interval="4200" monster="rat" duration="2000">
+			<attribute key="areaEffect" value="blueshimmer" /> 
+		</defense>
+			<defense name="outfit" interval="6200" monster="larva" duration="2000">
+				<attribute key="areaEffect" value="blueshimmer" /> 
+			</defense>
+			<defense name="outfit" interval="8200"  monster="scorpion" duration="2000">
+				<attribute key="areaEffect" value="blueshimmer" /> 
+			</defense>
+		</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="0"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="0"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Blub!" yell="1"/>
+		<voice sentence="Blub! Blub!" yell="1"/>
+		<voice sentence="Come'on Daddy! Help me" yell="1"/>
+	</voices>
+</monster>

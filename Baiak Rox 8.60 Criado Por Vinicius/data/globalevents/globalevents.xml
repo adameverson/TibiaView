@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+	<globalevent name="save" interval="2600" event="script" value="save.lua"/>
+	<globalevent name="clean" interval="4500" event="script" value="clean.lua"/>
+                 <globalevent name="info" interval="2000" event="script" value="info.lua"/>
+                 <globalevent name="info2" interval="50" event="script" value="info2.lua"/>
+        <globalevent name="texto" interval="2" script="texto.lua" />
+                  <globalevent name="lottery" interval="10800" event="script" value="lottery.lua"/> 
+	<globalevent name="serverstart" type="start" event="script" value="start.lua"/>
+	<globalevent name="playersrecord" type="record" event="script" value="record.lua"/>
+	<globalevent name="inv" interval="50000" event="script" value="inv.lua"/>
+        <globalevent name="MagicEffect12" interval="0" script="placa6.lua" />
+        <globalevent name="MagicEffect13" interval="0" script="placa7.lua" />
+        <globalevent name="MagicEffect14" interval="0" script="placa8.lua" />
+        <globalevent name="MagicEffect15" interval="0" script="placa9.lua" />
+
+	<!-- <globalevent name="timer_example" time="21:35" event="script" value="my_script.lua"/> -->
+</globalevents>

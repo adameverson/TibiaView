@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/private/forgottenserver/!svn/ver/2522/trunk/data/npc/lib/npcsystem
+END
+keywordhandler.lua
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/private/forgottenserver/!svn/ver/1342/trunk/data/npc/lib/npcsystem/keywordhandler.lua
+END
+queue.lua
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/private/forgottenserver/!svn/ver/1898/trunk/data/npc/lib/npcsystem/queue.lua
+END
+npcsystem.lua
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/private/forgottenserver/!svn/ver/2295/trunk/data/npc/lib/npcsystem/npcsystem.lua
+END
+modules.lua
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/private/forgottenserver/!svn/ver/2522/trunk/data/npc/lib/npcsystem/modules.lua
+END
+npchandler.lua
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/private/forgottenserver/!svn/ver/2279/trunk/data/npc/lib/npcsystem/npchandler.lua
+END

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="omruc" nameDescription="a omruc" race="blood" experience="2950" speed="370" manacost="0">
+  <health now="4300" max="4300"/>
+  <look type="84" head="20" body="30" legs="40" feet="50" corpse="6025"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="4"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="90" attack="95" poison="195"/>
+    <attack name="poison" interval="1000" chance="10" range="7" min="-100" max="-500">
+      <attribute key="shootEffect" value="poisonarrow"/>
+      <attribute key="areaEffect" value="greenbubble"/>
+    </attack>
+    <attack name="fire" interval="1000" chance="11" range="7" target="1" radius="3" min="-50" max="-450">
+      <attribute key="shootEffect" value="burstarrow"/>
+      <attribute key="areaEffect" value="explosionarea"/>
+    </attack>
+    <attack name="physical" interval="1000" chance="13" range="7" min="-200" max="-500">
+      <attribute key="shootEffect" value="arrow"/>
+      <attribute key="areaEffect" value="explosionarea"/>
+    </attack>
+    <attack name="speed" interval="1000" chance="25" range="7" speedchange="-850" duration="50000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+  </attacks>
+  <defenses armor="20" defense="25">
+    <defense name="healing" interval="1000" chance="17" min="100" max="200">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="invisible" interval="2000" chance="14" duration="8000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity death="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="4">
+    <summon name="Stalker" interval="1000" chance="10"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="Now chhhou shhhee me ... Now chhhou don't!!"/>
+    <voice sentence="Catchhhh me if chhhou can."/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> --Gold
+    <item id="2144" chance="1850"/> -- Yellow Gem
+	<item id="2354" chance="100000"/> -- Crystal Arrow
+	    <item id="2544" countmax="21" chance1="13000" chancemax="0"/> --Arrows
+        <item id="2545" countmax="20" chance1="10000" chancemax="0"/> --Poison Arrows
+        <item id="2546" countmax="15" chance1="10000" chancemax="0"/> -- Burst Atrrows
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2148" countmax="70" chance1="100000" chancemax="0"/> --Gold
+        <item id="2195" chance="1400"/> -- Boh
+        <item id="2444" chance="1000"/> -- Hammer of Wrath
+		<item id="7365" countmax="2" chance1="8000" chancemax="0"/> -- Onyx Arrows
+		<item id="2547" countmax="3" chance1="7000" chancemax="0"/> -- Power Bolt
+		<item id="2145" countmax="3" chance1="4000" chancemax="0"/> -- Small Diamond
+      </inside>
+    </item>
+  </loot>
+</monster>

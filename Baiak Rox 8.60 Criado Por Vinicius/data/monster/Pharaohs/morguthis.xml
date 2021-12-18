@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="morguthis" nameDescription="a morguthis" race="undead" experience="3000" speed="280" manacost="0">
+  <health now="4800" max="4800"/>
+  <look type="85" head="20" body="30" legs="40" feet="50" corpse="6025"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="140" attack="135" poison="65"/>
+    <attack name="death" interval="1000" chance="9" radius="3" target="0" min="-300" max="-500">
+      <attribute key="areaEffect" value="mortarea"/>
+    </attack>
+    <attack name="lifedrain" interval="1000" chance="11" radius="5" target="0" min="-150" max="-400">
+      <attribute key="areaEffect" value="blackspark"/>
+    </attack>
+  </attacks>
+  <defenses armor="35" defense="30">
+    <defense name="healing" interval="1000" chance="12" min="300" max="800">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="1000" chance="8" speedchange="500" duration="5000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+    <defense name="invisible" interval="1000" chance="10" duration="4000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+  <element icePercent="8"/>
+  <element firePercent="8"/>
+  <element energyPercent="8"/>
+  <element holyPercent="-20"/>
+  <element earthPercent="-10"/>
+  </elements>
+  <immunities>
+    <immunity death="0"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="3">
+    <summon name="hero" interval="1000" chance="8" max="3"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="Vengeance!"/>
+    <voice sentence="I am the supreme warrior!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> --Gold
+    <item id="2350" chance="100000"/> -- Sword Hilt
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2148" countmax="70" chance1="100000" chancemax="0"/> --Gold
+        <item id="2430" chance="2000"/> -- Knight Axe
+        <item id="2443" chance="1000"/> -- Ravager Axe
+        <item id="2645" chance="1500"/> -- Steel Boots
+        <item id="7591" chance="3000"/> -- GHP
+        <item id="7368" countmax="4" chance1="4000" chancemax="0"/> --Assassin star
+      </inside>
+    </item>
+  </loot>
+</monster>

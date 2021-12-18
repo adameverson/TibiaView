@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Handmaiden" nameDescription="The Handmaiden" race="undead" experience="8300" speed="450" manacost="0">
+  <health now="16500" max="16500"/>
+  <look type="230" corpse="6312"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+</flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="150" attack="160"/>
+    <attack name="manadrain" interval="2000" chance="25" range="7" min="-570" max="-1350">
+      <attribute key="areaEffect" value="blueshimmer"/>
+  </attack>
+  </attacks>
+  <defenses armor="25" defense="35">
+    <defense name="healing" interval="2000" chance="50" min="150" max="255">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="2000" chance="12" speedchange="520" duration="8000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+    <defense name="invisible" interval="3000" chance="15" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity energy="1"/>
+    <immunity fire="1"/>
+	<immunity earth="1"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="2">
+    <summon name="Hand of cursed fate" interval="3000" chance="30" max="2"/>
+  </summons>
+  <voices interval="5000" chance="10">
+
+  </voices>
+  <loot>
+   <item id="2148" countmax="100" chance1="100000" chancemax="0"/> --Gold Coin
+   <item id="6539" chance="100000" /> -- Handmaiden's Protector
+   <item id="1987" chance="100000"> --Bag
+            <inside>
+              <item id="6500" countmax="1" chance1="2500" chancemax="0"/> --Concentrated Demonic Blood
+              <item id="2153" chance="1666"/> --Violet Gem
+            </inside>
+        </item>
+   </loot>
+</monster>

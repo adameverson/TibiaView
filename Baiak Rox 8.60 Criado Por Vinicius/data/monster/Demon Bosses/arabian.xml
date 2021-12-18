@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Arabian" nameDescription="a arabian" race="fire" experience="20000" speed="530" manacost="10000">
+  <health now="30000" max="30000"/>
+  <look type="146" head="114" body="20" legs="22" feet="2" addons="3" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="90" defense="10"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="100" attack="110"/>
+    <attack name="manadrain" interval="2000" chance="13" range="7" min="0" max="-600"/>
+    <attack name="fire" interval="2000" chance="30" range="7" radius="7" target="1" min="-300" max="-850">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="firearea"/>
+	</attack>
+    <attack name="lifedrain" interval="1000" chance="12" length="8" spread="0" min="-400" max="-960">
+		<attribute key="areaEffect" value="purpleenergy"/>
+	</attack>
+	<attack name="speed" interval="2000" chance="15" target="1" speedchange="-750" duration="30000">
+		<attribute key="shootEffect" value="suddendeath"/>
+	</attack>
+	<attack name="energy" interval="3000" chance="10" range="1" target="1" min="-1500" max="-2000">
+		<attribute key="areaEffect" value="purpleenergy"/>
+	</attack>
+  </attacks>
+  <defenses armor="55" defense="55">
+    <defense name="healing" interval="2000" chance="15" min="900" max="1000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+	<defense name="speed" interval="1000" chance="8" speedchange="290" duration="5000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element physicalPercent="30"/>
+		<element energyPercent="50"/>
+		<element earthPercent="20"/>
+		<element icePercent="-15"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="20"/>
+	</elements>
+  <immunities>
+    <immunity fire="1"/>
+    <immunity drown="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="1">
+    <summon name="Ferumbras" interval="1000" chance="12"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="Become to Desert" yell="1"/>
+    <voice sentence="LEAVE!" yell="1"/>
+    <voice sentence="Attack ! Scarabs" yell="1"/>
+    <voice sentence="I am Arabian! Leave Now!"/>
+    <voice sentence="DOOOWWN" yell="0"/>
+  </voices>
+  <loot>
+  	<item id="2514" chance="1900"/> --mastermind shield
+ 	<item id="2472" chance="200"/> --magic plate armor
+ 	<item id="10521" chance="100000">
+		<inside>
+		 	<item id="2475" chance="1800"/> -- warrior helmet
+		 	<item id="2432" chance="3800"/> --fire axe
+		        <item id="2112" chance="4100"/> --addon doll
+			<item id="2470" chance="1350"/> --golden legs
+			<item id="7369" chance="300"/> -- golden trophy
+			<item id="2520" chance="3100"/> --demon shield
+		</inside>
+ 	</item>
+</loot>
+</monster>

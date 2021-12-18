@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Abominator vip3" nameDescription="Abominator vip3" race="undead" experience="100000" speed="500" manacost="0">
+	<health now="40000" max="40000"/>
+	<look type="12" head="0" body="94" legs="79" feet="79" corpse="6068"/>
+	<targetchange interval="10000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="98"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-1500" max="-2000"/>
+		<attack name="fire" interval="3000" chance="35" range="7" radius="7" target="1" min="-900" max="-1500">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="melee" interval="1800" chance="40" range="7" radius="5" target="0" min="-450" max="-800">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="energy" interval="3000" chance="30" length="8" spread="0" min="-300" max="-1000">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="physical" interval="2500" chance="20" range="7" radius="5" target="0" min="-300" max="-500">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="15" range="7" radius="13" target="0" min="-350" max="-500">
+			<attribute key="areaEffect" value="rednote"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="20" radius="14" target="0" min="-300" max="-450">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+		<attack name="melee" interval="3000" chance="15" range="7" radius="3" target="0" min="-200" max="-300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="55" defense="65">
+		<defense name="healing" interval="3000" chance="35" min="300" max="800">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="4000" chance="80" speedchange="440" duration="6000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="100"/>
+		<element earthPercent="100"/>
+		<element energyPercent="100"/>
+		<element deathPercent="60"/>
+		<element physicalPercent="40"/>
+		<element icePercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="6">
+		<summon name="Demon" interval="4000" chance="33"/>
+	</summons>
+	<voices interval="5000" chance="30">
+		<voice sentence="I AM ABOMINATOR, LORD OF THE TRIANGLE... AND YOU ARE LOST!" yell="1"/>
+		<voice sentence="MY SEED IS FEAR AND MY HARVEST ARE YOUR SOULS!" yell="1"/>
+		<voice sentence="THE TRIANGLE OF TERROR WILL RISE!" yell="1"/>
+		<voice sentence="ZATHROTH! LOOK AT THE DESTRUCTION I AM CAUSING IN YOUR NAME!" yell="1"/>
+	</voices>
+	<loot>
+<item id="2148" countmax="100" chance1="80000" chancemax="8"/>
+<item id="2148" countmax="100" chance1="20000" chancemax="10"/>
+<item id="2150" countmax="16" chance1="4000" chancemax="10"/> small amethyst
+<item id="2148" countmax="83" chance1="40000" chancemax="0"/>
+<item id="7388" chance="1200" /> --vile axe
+<item id="2130" chance="1200" /> --golden amulet
+<item id="2208" chance="3200" /> --axe ring
+<item id="8871" chance="3100" /> --focus cape
+<item id="2158" chance="1500" /> --blue gem
+<item id="2155" chance="1500" /> --green gem
+<item id="2210" chance="3200" /> --sword ring
+<item id="2208" chance="3200" /> --axe ring
+<item id="9970" countmax="13" chance1="6000" chancemax="0"/> small topaz
+<item id="6500" countmax="2" chance1="6000" chancemax="0"/> demonic ess
+<item id="2143" countmax="7" chance1="5000" chancemax="0"/> --White pearl
+<item id="2470" chance="2000" /> --golden legs
+<item id="7368" countmax="25" chance="8000"/> --stars
+<item id="2144" countmax="12" chance1="4000" chancemax="0"/> --black pearl
+<item id="2145" countmax="5" chance1="3000" chancemax="0"/> --small diamond
+<item id="2514" chance="5650"/> --mastermind shield
+<item id="2466" chance="8100"/> --golden armor
+<item id="7412" chance="4200" /> --butcher's axe
+<item id="7590" chance="7000"/> --great mana potion
+<item id="8904" chance="5000"/> --spellbook of prophercies
+<item id="7591" chance="8000"/> --great health potion
+<item id="1987" chance="100000">
+<inside>
+<item id="2148" countmax="100" chance1="80000" chancemax="0"/>
+<item id="2148" countmax="100" chance1="20000" chancemax="0"/>
+<item id="8901" chance="4400"/> --spellbook of warding
+<item id="2415" chance="600"/> --great axe
+<item id="2208" chance="3200" /> --axe ring
+<item id="8926" chance="900"/> --demonwing axe
+<item id="2645" chance="3500"/> --steel boots
+<item id="6500" countmax="2" chance1="6000" chancemax="0"/> demonic ess
+<item id="8902" chance="4500"/> spellbook of mind control
+<item id="2136" chance1="3000"/> demonbone amulet
+<item id="2488" chance1="4000"/> crown legs
+<item id="2143" countmax="7" chance1="7000" chancemax="0"/> --White pearl
+<item id="7590" chance="5000"/> --great mana potion
+<item id="8879" chance="3400"/> --voltage armor
+<item id="2146" countmax="18" chance1="9000" chancemax="0"/> --small sapphire
+<item id="2195" chance="5000"/> --boh
+<item id="8918" chance="1000"/> --spellbook of dark mysteries
+<item id="7591" chance="7000"/> --great health potion
+</inside>
+	</item>
+</loot>
+</monster>

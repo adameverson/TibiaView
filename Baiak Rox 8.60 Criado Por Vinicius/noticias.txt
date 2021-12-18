@@ -1,0 +1,71 @@
+Bem Vindo ao Baiak Yurots [8.60]!!!
+
+1)Quest Service:
+ !service nome da quest, preço para os interessados.
+
+2) Armas Editadas.
+
+3)Magia para Royal Paladin:
+Exevo con san (Conjura assassin Stars).
+
+4) Npc Buffer (Raphael)
+Emcima do Depot da Baiak City.
+
+5) Nightmare Shield por 200 demonic essences: !nightmare
+Necromancer Shield por 200 demonic essences: !necromancer
+
+6)Comando para os líderes da guild, na qual ele manda uma mensagem em vermelho para todos da Guild:
+/guild 
+
+7) Troque de Sexo, pagando apenas 7dias de Premium Account através do comando:
+!changesex
+
+8)Sistema de AFK
+!afk on
+!afk off
+
+9)Você pode escolher se deseja ser atacado pela sua guild ou atacar um membro da sua guild por meio do Comando:
+!attackguild on
+!attackguild off
+
+10)Quests Principais:
+Anihi
+Poi
+Demon Oak
+Mpa Quest
+Inquisition
+Entre Outras...
+
+11)Novo Npc Adicionado:
+Npc Update no Templo Das Cidades.
+Npc de Bless Adionado na Baiak City ao Norte do Depot.
+
+12)Adicionado 2 Npc's do Addon do WarMaster:
+Emcima do Varkhal na cidade Baiak Yurots...
+
+13)Novo Sistema de Addon:
+Para Adquirir vc deve pegar o addon doll que cai de varios bixos...
+quando pegar vc deve falar !addon citizen...
+!addon mage
+!addon knight etc...
+
+14)Novas Hunts Adicionais na Area Vip
+Warlock Vip
+Fury
+Baiak Quest (items) -> Baiak Helmet , Mage Vip Robe , Boots of Baiak
+Bossinf of Baiak
+Medusa Vip
+
+15)Update Versão 1.1.7
+Adicionado Comando !attackguild on
+                   !attackguild off
+Adicionadas Varias Hunt's de Bixos 8.54 em Breve Bixos 8.60 !
+Adicionada Casas Em Cima do Templo!
+ADicionado 100 Novos Treino com Laguinho para Pescar !
+Adiconado Ferumbras Vip e Orshabaal Vip!
+
+Em Breve Mais Update!
+
+
+By:Baiak Lula.
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Bossing of Baiak" nameDescription="Bossing of Baiak" race="blood" experience="19000" speed="500" manacost="0">
+	<health now="50000" max="50000"/>
+        <look type="12" head="95" body="95" legs="95" feet="95" addons="3" corpse="5527"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="2"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="2500"/>
+	</flags>
+	<attacks>
+		<attack name="manadrain" interval="2000" chance="20" range="7" min="-500" max="-1000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="poison" interval="3000" chance="20" radius="6" target="0" min="-600" max="-1000">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="energy" interval="2000" chance="18" radius="6" target="0" min="-600" max="-1200">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="manadrain" interval="2000" chance="16" radius="6" target="0" min="-625" max="-1075">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="21" radius="6" target="0" min="-600" max="-1050">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		<attack name="effect" interval="3000" chance="20" radius="5" target="0" min="-600" max="-1200">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="firecondition" interval="3000" chance="20" range="7" radius="7" target="1" min="-500" max="-1000">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="25" length="8" spread="0" min="-350" max="-750">
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="100" defense="120">
+		<defense name="healing" interval="2000" chance="10" min="900" max="1500">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+		<defense name="speed" interval="3000" chance="30" speedchange="360" duration="7000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="4000" chance="20" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="90"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="3">
+		<summon name="Demon Vip" interval="3000" chance="20" max="5"/>
+	</summons>
+	<voices interval="5000" chance="30">
+		<voice sentence="The Power of The Baiak Server!" yell="1"/>
+		<voice sentence="OMG You Is Noob !! MUAHAHAHAHAHAHAHA!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="25" chance="100000"/><!-- gold coin -->
+	        <item id="2795" countmax="6" chance="7500"/> --Fire Mushroom
+		<item id="2396" chance="5600"/> --ice rapier
+		<item id="2472" chance="9000"/><!-- magic plate armor -->
+ 	        <item id="2514" chance="9000"/> --mastermind shield
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2678" countmax="3" chance="20000"/><!-- coconut -->
+				<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
+				<item id="2151" countmax="4" chance="12000"/><!-- talon -->
+				<item id="5903" chance="100000"/><!-- ferumbras' hat -->
+				<item id="2149" countmax="3" chance="15000"/><!-- small emerald -->
+				<item id="2171" chance="30000"/><!-- platinum amulet -->
+			      <item id="2112" chance="4100"/> --addon doll
+			</inside>
+		</item>
+	</loot>
+</monster>

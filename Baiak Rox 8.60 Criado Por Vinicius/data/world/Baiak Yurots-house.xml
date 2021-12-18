@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<houses>
+  <house name="Tower 1" houseid="1" entryx="158" entryy="106" entryz="7" rent="0" townid="1" size="85"/>
+  <house name="Small Street IV" houseid="3" entryx="143" entryy="27" entryz="7" rent="0" townid="1" size="19"/>
+  <house name="Pirate Street" houseid="8" entryx="176" entryy="56" entryz="7" rent="0" townid="0" size="43"/>
+  <house name="Bamboo Camp I" houseid="10" entryx="181" entryy="104" entryz="7" rent="0" townid="1" size="1"/>
+  <house name="Bamboo Camp II" houseid="11" entryx="171" entryy="101" entryz="7" rent="0" townid="1" size="1"/>
+  <house name="Bamboo Camp III" houseid="12" entryx="176" entryy="96" entryz="7" rent="0" townid="1" size="1"/>
+  <house name="Bamboo Camp IV" houseid="13" entryx="185" entryy="96" entryz="7" rent="0" townid="1" size="1"/>
+  <house name="Bamboo Camp V" houseid="14" entryx="186" entryy="101" entryz="7" rent="0" townid="1" size="1"/>
+  <house name="Bamboo Camp VI" houseid="15" entryx="185" entryy="106" entryz="7" rent="0" townid="1" size="1"/>
+  <house name="Great Street I" houseid="25" entryx="157" entryy="33" entryz="7" rent="0" townid="1" size="18"/>
+  <house name="Great Street II" houseid="26" entryx="164" entryy="37" entryz="7" rent="0" townid="1" size="28"/>
+  <house name="River Street III" houseid="30" entryx="148" entryy="59" entryz="7" rent="0" townid="1" size="0"/>
+  <house name="River Street IV" houseid="31" entryx="158" entryy="59" entryz="6" rent="0" townid="1" size="23"/>
+  <house name="River Street V" houseid="32" entryx="153" entryy="59" entryz="6" rent="0" townid="1" size="18"/>
+  <house name="River Street VI" houseid="33" entryx="150" entryy="63" entryz="6" rent="0" townid="1" size="28"/>
+  <house name="Condominio Europa II" houseid="35" entryx="144" entryy="42" entryz="6" rent="0" townid="1" size="10"/>
+  <house name="Condominio Europa III" houseid="36" entryx="145" entryy="49" entryz="6" rent="0" townid="1" size="27"/>
+  <house name="Upper Street I" houseid="37" entryx="164" entryy="31" entryz="6" rent="0" townid="1" size="63"/>
+  <house name="Upper Street II" houseid="38" entryx="166" entryy="33" entryz="6" rent="0" townid="1" size="10"/>
+  <house name="Upper Street III" houseid="39" entryx="165" entryy="36" entryz="6" rent="0" townid="1" size="13"/>
+  <house name="Upper Street IV" houseid="40" entryx="167" entryy="31" entryz="5" rent="0" townid="1" size="20"/>
+  <house name="Upper Street V" houseid="41" entryx="168" entryy="34" entryz="5" rent="0" townid="1" size="23"/>
+  <house name="Heavy Depot House" houseid="42" entryx="129" entryy="62" entryz="7" rent="0" townid="1" size="18"/>
+  <house name="Heavy Depot House II" houseid="43" entryx="132" entryy="62" entryz="6" rent="0" townid="1" size="38"/>
+  <house name="Small Street V" houseid="44" entryx="143" entryy="34" entryz="7" rent="0" townid="1" size="26"/>
+  <house name="Small Street VI" houseid="45" entryx="148" entryy="29" entryz="7" rent="0" townid="1" size="10"/>
+  <house name="Small Street VII" houseid="46" entryx="148" entryy="32" entryz="7" rent="0" townid="1" size="14"/>
+  <house name="Safe House I" houseid="52" entryx="77" entryy="30" entryz="7" rent="0" townid="1" size="14"/>
+  <house name="Safe House II" houseid="53" entryx="82" entryy="28" entryz="7" rent="0" townid="1" size="6"/>
+  <house name="Safe House III" houseid="54" entryx="87" entryy="27" entryz="7" rent="0" townid="1" size="8"/>
+  <house name="Safe House IV" houseid="55" entryx="87" entryy="34" entryz="7" rent="0" townid="1" size="6"/>
+  <house name="Port house I" houseid="56" entryx="122" entryy="66" entryz="7" rent="0" townid="1" size="15"/>
+  <house name="Port house II" houseid="57" entryx="119" entryy="70" entryz="7" rent="0" townid="1" size="13"/>
+  <house name="Hydraland I" houseid="59" entryx="114" entryy="179" entryz="7" rent="0" townid="3" size="30"/>
+  <house name="Hydraland II" houseid="60" entryx="114" entryy="185" entryz="7" rent="0" townid="3" size="30"/>
+  <house name="Hydraland III" houseid="61" entryx="113" entryy="202" entryz="7" rent="0" townid="3" size="42"/>
+  <house name="Hydraland IV" houseid="62" entryx="121" entryy="202" entryz="7" rent="0" townid="3" size="42"/>
+  <house name="Hydraland V" houseid="63" entryx="126" entryy="190" entryz="7" rent="0" townid="3" size="30"/>
+  <house name="Hydraland VI" houseid="64" entryx="136" entryy="187" entryz="7" rent="0" townid="3" size="15"/>
+  <house name="Hydraland VII" houseid="65" entryx="141" entryy="187" entryz="7" rent="0" townid="3" size="15"/>
+  <house name="Hydraland VIII" houseid="66" entryx="152" entryy="186" entryz="7" rent="0" townid="3" size="27"/>
+  <house name="Condominio Europa IV" houseid="67" entryx="145" entryy="46" entryz="5" rent="0" townid="1" size="10"/>
+  <house name="Condominio Europa V" houseid="68" entryx="145" entryy="51" entryz="5" rent="0" townid="1" size="7"/>
+  <house name="Condominio Europa VI" houseid="69" entryx="146" entryy="53" entryz="5" rent="0" townid="1" size="9"/>
+  <house name="Liberty Bay I" houseid="70" entryx="228" entryy="88" entryz="6" rent="0" townid="2" size="37"/>
+  <house name="Liberty Bay II" houseid="71" entryx="241" entryy="86" entryz="6" rent="0" townid="2" size="37"/>
+  <house name="Liberty Bay III" houseid="72" entryx="269" entryy="71" entryz="6" rent="0" townid="2" size="45"/>
+  <house name="Liberty Bay IV" houseid="73" entryx="277" entryy="70" entryz="6" rent="0" townid="2" size="37"/>
+  <house name="Liberty Bay V" houseid="74" entryx="291" entryy="67" entryz="6" rent="0" townid="2" size="86"/>
+  <house name="Liberty Bay VI" houseid="75" entryx="310" entryy="70" entryz="6" rent="0" townid="2" size="38"/>
+  <house name="Liberty Bay VII" houseid="76" entryx="325" entryy="77" entryz="6" rent="0" townid="2" size="33"/>
+  <house name="Liberty Bay VIII" houseid="77" entryx="320" entryy="121" entryz="6" rent="0" townid="2" size="26"/>
+  <house name="Liberty Bay IX" houseid="78" entryx="309" entryy="114" entryz="6" rent="0" townid="2" size="33"/>
+  <house name="Liberty Bay X" houseid="79" entryx="303" entryy="115" entryz="6" rent="0" townid="2" size="33"/>
+  <house name="Liberty Bay XI" houseid="80" entryx="291" entryy="115" entryz="6" rent="0" townid="2" size="33"/>
+  <house name="Liberty Bay XII" houseid="81" entryx="243" entryy="119" entryz="6" rent="0" townid="2" size="26"/>
+  <house name="Liberty Bay XIII" houseid="82" entryx="226" entryy="115" entryz="6" rent="0" townid="2" size="33"/>
+  <house name="Liberty Bay XIV" houseid="83" entryx="296" entryy="103" entryz="5" rent="0" townid="2" size="21"/>
+  <house name="Liberty Bay XV" houseid="84" entryx="270" entryy="104" entryz="5" rent="0" townid="2" size="23"/>
+  <house name="Liberty Bay XVI" houseid="85" entryx="244" entryy="109" entryz="5" rent="0" townid="2" size="18"/>
+  <house name="Temple House I" houseid="86" entryx="165" entryy="59" entryz="7" rent="0" townid="1" size="0"/>
+  <house name="Temple House II" houseid="88" entryx="155" entryy="59" entryz="7" rent="0" townid="1" size="0"/>
+  <house name="Favela House I" houseid="89" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="26"/>
+  <house name="Favela House II" houseid="90" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="26"/>
+  <house name="Favela House III" houseid="91" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="40"/>
+  <house name="Favela House IV" houseid="92" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="26"/>
+  <house name="Favela House V" houseid="93" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="10"/>
+  <house name="Baiak City 1" houseid="95" entryx="0" entryy="0" entryz="0" rent="0" townid="4" size="44"/>
+  <house name="Baiak City 2" houseid="96" entryx="0" entryy="0" entryz="0" rent="0" townid="4" size="63"/>
+  <house name="Baiak City 3" houseid="97" entryx="0" entryy="0" entryz="0" rent="0" townid="4" size="63"/>
+  <house name="Baiak City 4" houseid="98" entryx="0" entryy="0" entryz="0" rent="0" townid="4" size="72"/>
+  <house name="Baiak City 5" houseid="99" entryx="0" entryy="0" entryz="0" rent="0" townid="4" size="72"/>
+  <house name="Baiak City 6" houseid="100" entryx="0" entryy="0" entryz="0" rent="0" townid="4" size="60"/>
+  <house name="Baiak City 7" houseid="101" entryx="0" entryy="0" entryz="0" rent="0" townid="4" size="56"/>
+  <house name="Baiak City 8" houseid="102" entryx="0" entryy="0" entryz="0" rent="0" townid="4" size="69"/>
+  <house name="Baiak City 9" houseid="103" entryx="0" entryy="0" entryz="0" rent="0" townid="4" size="128"/>
+  <house name="Baiak City 10" houseid="104" entryx="0" entryy="0" entryz="0" rent="0" townid="4" size="64"/>
+  <house name="Baiak City 11" houseid="105" entryx="0" entryy="0" entryz="0" rent="0" townid="4" size="60"/>
+  <house name="Baiak City 12" houseid="106" entryx="0" entryy="0" entryz="0" rent="0" townid="4" size="64"/>
+  <house name="Baiak Yurots House 1" houseid="107" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="49"/>
+  <house name="Baiak Yurots House 2" houseid="108" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="56"/>
+  <house name="Baiak Yurots House 3" houseid="109" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="77"/>
+  <house name="Baiak Yuorts House 4" houseid="110" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="31"/>
+  <house name="Baiak Yurots House 5" houseid="111" entryx="144" entryy="47" entryz="7" rent="0" townid="1" size="40"/>
+  <house name="Favela House 2" houseid="112" entryx="185" entryy="49" entryz="7" rent="0" townid="1" size="51"/>
+  <house name="" houseid="113" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="16"/>
+  <house name="" houseid="114" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="28"/>
+  <house name="" houseid="115" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="22"/>
+  <house name="" houseid="116" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="28"/>
+  <house name="" houseid="118" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="82"/>
+  <house name="" houseid="119" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="62"/>
+  <house name="" houseid="120" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="62"/>
+  <house name="" houseid="121" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="67"/>
+  <house name="" houseid="122" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="69"/>
+  <house name="" houseid="123" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="52"/>
+  <house name="" houseid="124" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="53"/>
+  <house name="Baiak Guild House 1" houseid="125" entryx="144" entryy="47" entryz="7" rent="0" townid="1" size="201"/>
+  <house name="River Street Max" houseid="126" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="35"/>
+  <house name="Unnamed House #127" houseid="127" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="45"/>
+  <house name="Unnamed House #128" houseid="128" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="31"/>
+  <house name="Unnamed House #131" houseid="131" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="47"/>
+  <house name="Unnamed House #132" houseid="132" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="6"/>
+  <house name="Unnamed House #133" houseid="133" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="4"/>
+  <house name="Unnamed House #138" houseid="138" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="14"/>
+  <house name="Unnamed House #139" houseid="139" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="21"/>
+  <house name="Unnamed House #140" houseid="140" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="14"/>
+  <house name="Unnamed House #141" houseid="141" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="32"/>
+  <house name="Unnamed House #142" houseid="142" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="6"/>
+  <house name="Unnamed House #143" houseid="143" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="47"/>
+  <house name="Unnamed House #144" houseid="144" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="41"/>
+  <house name="Unnamed House #145" houseid="145" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="45"/>
+  <house name="Unnamed House #146" houseid="146" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="45"/>
+  <house name="Unnamed House #147" houseid="147" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="45"/>
+  <house name="Unnamed House #148" houseid="148" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="47"/>
+  <house name="Unnamed House #149" houseid="149" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="45"/>
+  <house name="Unnamed House #150" houseid="150" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="45"/>
+  <house name="Unnamed House #151" houseid="151" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="47"/>
+  <house name="Unnamed House #152" houseid="152" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="7"/>
+  <house name="Unnamed House #153" houseid="153" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="7"/>
+  <house name="Unnamed House #154" houseid="154" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="7"/>
+  <house name="Unnamed House #155" houseid="155" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="7"/>
+  <house name="Unnamed House #156" houseid="156" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="7"/>
+  <house name="Unnamed House #157" houseid="157" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="7"/>
+  <house name="Unnamed House #158" houseid="158" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="7"/>
+  <house name="Unnamed House #159" houseid="159" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="7"/>
+  <house name="Unnamed House #160" houseid="160" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="47"/>
+  <house name="Unnamed House #161" houseid="161" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="7"/>
+  <house name="Unnamed House #162" houseid="162" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="47"/>
+</houses>

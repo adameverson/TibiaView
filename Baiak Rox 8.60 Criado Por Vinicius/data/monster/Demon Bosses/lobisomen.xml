@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<monster name="Lobisomen" description="a Lobisomen" experience="300" speed="420" race="blood">
+	<health now="11400" max="11400"/>  
+	<strategy attack="100" defense="0"/>  
+	<targetchange speed="0" chance="8"/>  
+	<look type="308" corpse="6080"/>
+	<flags>    
+		<flag canpushitems="1"/>   
+		<flag canpushcreatures="1"/>    
+		<flag hostile="1"/>    
+		<flag attackable="1"/>    
+		<flag pushable="0"/>    
+		<flag staticattack="90"/>    
+		<flag targetdistance="1"/>  
+	</flags>  
+	<attacks>    
+		<attack name="melee" interval="2000" chance="100" min="-1000" max="-1350" range="1"/>
+		<attack name="outfit" interval="1000" chance="9" range="7" monster="werewolf" duration="5000">
+			<attribute key="areaeffect" value="blueshimmer"/>
+		</attack>  
+	</attacks>  
+	<defenses armor="50" defense="55"/>
+	<elements>
+		<element physicalPercent="10"/>
+		<element energyPercent="5"/>
+		<element earthPercent="5"/>
+		<element firePercent="-5"/>
+		<element deathPercent="10"/>
+		<element icePercent="-5"/>
+		<element holyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/> 
+	</immunities>
+	<summons maxSummons="3">
+		<summon name="fire elemental" interval="6500" chance="100"/>
+		<summon name="ghoul" interval="6500" chance="100"/>
+		<summon name="ghost" interval="6500" chance="100"/>
+	</summons>
+	<voices speed="5000" chance="10">    
+		<voice sentence="BLOOD!" yell="1"/>    
+		<voice sentence="HRAAAAAAAAAARRRRRR!" yell="1"/>        
+	</voices>   
+	<loot>
+		<item id="2148" countmax="96" chance1="100000" chancemax="0"/> -- Gold
+		<item id="2148" countmax="84" chance1="100000" chancemax="0"/> -- Gold
+		<item id="5897" countmax="1" chance1="5000" chancemax="0"/> -- wolf paw
+		<item id="2805" chance="4000"/> --troll green
+		<item id="2647" chance="3000"/> --plate legs
+		<item id="8473" chance="1500"/> --uhp
+		<item id="7591" chance="2000"/> --ghp
+		<item id="7588" chance="2500"/> --shp
+		<item id="1987" chance="100000"> -- Bag
+			<inside>
+				<item id="9809" chance="3000"/> --rusty armor
+				<item id="7439" chance="800"/> --berserk potion
+				<item id="7419" chance="500"/> --dreaded cleaver
+				<item id="7383" chance="300"/> --relic sword
+			</inside>
+		</item>
+	</loot>
+</monster>

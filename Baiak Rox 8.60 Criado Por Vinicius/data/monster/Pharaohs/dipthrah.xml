@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="dipthrah" nameDescription="a dipthrah" race="undead" experience="2900" speed="290" manacost="0">
+  <health now="4200" max="4200"/>
+  <look type="87" head="20" body="30" legs="40" feet="50" corpse="6031"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="130" attack="130" />
+    <attack name="manadrain" interval="1000" chance="15" range="7" min="-200" max="-500">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="speed" interval="1000" chance="15" range="7" speedchange="-850" duration="50000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="drunk" interval="1000" chance="12" radius="4" target="0">
+      <attribute key="areaEffect" value="bluebubble"/>
+    </attack>
+    <attack name="ice" interval="1000" chance="11" radius="6" target="0" min="0" max="-600">
+      <attribute key="areaEffect" value="bluebubble"/>
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="25">
+    <defense name="healing" interval="1000" chance="25" min="100" max="200">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+  <element energyPercent="20"/>
+  <element holyPercent="-10"/>
+  </elements>
+  <immunities>
+    <immunity physical="1"/>
+    <immunity death="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="4">
+    <summon name="priestess" interval="1000" chance="15"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="Come closer to learn the final lesson."/>
+    <voice sentence="You can't escape death forever."/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> -- Gold
+    <item id="2176" chance="2000"/> -- Orb
+	<item id="2353" chance="100000"/> -- Ornamented Ankh
+	<item id="2436" chance="1666"/> --Skull Staff
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> -- Gold
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2148" countmax="150" chance1="100000" chancemax="0"/> --Gold
+        <item id="2158" chance="1800"/> -- Blue GEm
+        <item id="7590" chance="3000"/> -- Great MP
+        <item id="2146" countmax="3" chance1="4000" chancemax="0"/> -- Small Sapphire
+		<item id="2446" chance="1300"/> -- Pharaoh SWord
+      </inside>
+    </item>
+  </loot>
+</monster>

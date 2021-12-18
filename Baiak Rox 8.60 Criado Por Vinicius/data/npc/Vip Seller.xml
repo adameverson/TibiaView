@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Vip Seller" script="data/npc/scripts/default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="134" head="20" body="20" legs="114" feet="22" addons="3"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value="Vip Sword,8932,15000000;Vip Axe,8293,15000000;Vip Star,7366,15000000;Vip Club,8929,15000000;Vip Wand,7414,15000000;Vip Rod,7958,15000000;"/>
+	</parameters>
+1</npc>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lord of the Elements" nameDescription="a Lord of the Elements" race="blood" experience="8000" speed="350" manacost="0">
+  <health now="10000" max="10000"/>
+<look type="293" corpse="1492"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" min="-200" max="-280"/>
+
+    <attack name="ice" interval="3000" chance="12" length="8" spread="3" min="-350" max="-550">
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+<attack name="fire" interval="1000" chance="12" length="8" spread="3" min="-350" max="-550">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+<attack name="energy" interval="3000" chance="12" length="8" spread="3" min="-350" max="-550">
+			<attribute key="areaEffect" value="energyarea"/>
+		</attack>
+	  <attack name="earth" interval="4000" chance="8" length="9" spread="3" min="-350" max="-550">
+		<attribute key="areaEffect" value="bigplants"/>
+	  </attack>
+    <attack name="firefield" interval="4000" chance="15" range="7" radius="1" target="1">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+    <attack name="energyfield" interval="4000" chance="15" range="7" radius="1" target="1">
+      <attribute key="shootEffect" value="energy"/>
+    </attack>
+    <attack name="poisonfield" interval="4000" chance="15" range="7" radius="1" target="1">
+      <attribute key="shootEffect" value="poison"/>
+    </attack> 
+    <attack name="Great Fireball" interval="5000" chance="25" range="7" radius="3" target="0" min="-250" max="-350">
+     </attack>
+
+  <attack name="Avalanche" interval="5000" chance="25" range="7" radius="3" target="0" min="-250" max="-350">
+     </attack>
+
+  <attack name="Stone Shower" interval="5000" chance="25" range="7" radius="3" target="0" min="-250" max="-350">
+     </attack>
+
+  <attack name="Thunderstorm" interval="5000" chance="25" range="7" radius="3" target="0" min="-250" max="-350">
+     </attack>
+  </attacks>
+  <defenses armor="17" defense="23">
+    <defense name="outfit" interval="5000" chance="60" monster="energy elemental" duration="1000000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="3000" chance="60" monster="earth elemental" duration="1000000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="60" monster="water elemental" duration="1000000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="60" monster="spirit of fire" duration="1000000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+     <defense name="speed" interval="1500" chance="120" range="7" speedchange="400" duration="30000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+	<element energyPercent="50"/>
+	<element earthPercent="50"/>
+	<element firePercent="50"/>
+	<element icePercent="50"/>
+  </elements>
+  <immunities>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <loot>  
+</loot>
+</monster>

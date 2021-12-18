@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mr. Punish" nameDescription="Mr. Punish" race="undead" experience="7550" speed="330" manacost="0">
+  <health now="20000" max="20000"/>
+  <look type="234" corpse="6328"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="130" attack="120"/>
+        <attack name="death" interval="1000" chance="10" radius="6" target="0" min="-120" max="-330">
+      <attribute key="areaEffect" value="purplenote"/>
+    </attack>
+    <attack name="physical" interval="1000" chance="12" range="7" min="-240" max="-740">
+      <attribute key="shootEffect" value="throwingknife"/>
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="35">
+    <defense name="healing" interval="2000" chance="50" min="75" max="325">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+    <elements>
+		<element physicalPercent="10"/>
+		<element energyPercent="50"/>
+		<element earthPercent="80"/>
+		<element icePercent="-10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="40"/>
+</elements>
+  <immunities>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="1000" chance="5">
+    <voice sentence="I kept my axe sharp, especially for you!" yell="1"/>
+  </voices>
+  <loot>
+	<item id="2148" countmax="76" chance1="100000" chancemax="0"/> --Gold Coins
+	<item id="2152" countmax="4" chance1="10000" chancemax="0"/> -- Platinum Coins
+	<item id="6537" chance="100000"/> --Mr. Punish's Handcuffs
+	<item id="1987" chance="100000"> --Bag
+        <inside>
+			<item id="6500" countmax="3"  chance1="4555" chancemax="0"/> --Concentrated Demonic Blood
+			<item id="5944" chance="6666"/> --Soul Orb
+			<item id="6492" chance="5555"/> --Bat Decoration
+        </inside>
+    </item>
+  </loot>
+</monster>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Brutus Bloodbeard" nameDescription="Brutus Bloodbeard" race="blood" experience="1100" speed="300" manacost="0">
+  <health now="1900" max="1900"/>
+  <look type="98" head="0" body="0" legs="0" feet="0" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="25"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<attacks>
+    <attack name="melee" interval="2000" skill="80" attack="80"/>
+    <attack name="physical" interval="2000" chance="17" range="7" min="-100" max="-130">
+      <attribute key="shootEffect" value="throwingknife"/>
+    </attack>
+<attack name="drunk" interval="1000" chance="19" radius="5" target="0" min="-120" max="-200">
+      <attribute key="areaEffect" value="purplenote"/>
+	</attack>
+</attacks>
+  <defenses armor="25" defense="20"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <loot>
+    <item id="2148" countmax="50" chance1="40000" chancemax="108"/>
+    <item id="2229" countmax="2" chance1="40000" chancemax="108"/>
+    <item id="6099" chance="100000"/> -- Ron The Ripper sabre
+    <item id="2387" chance="9999"/>
+    <item id="2463" chance="5555"/>
+    <item id="2379" chance="100000"/>
+    <item id="2476" chance="9000"/>
+  </loot>
+</monster>

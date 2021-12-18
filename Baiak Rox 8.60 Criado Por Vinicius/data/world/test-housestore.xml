@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<houses>
+  <house houseid="1" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Lord Kina"/>
+    <accesslist listid="257" text="lord kina&#10;"/>
+  </house>
+  <house houseid="2" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Smocked&#10;"/>
+  </house>
+  <house houseid="3" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Master Bulock&#10;Bobzinhu&#10;"/>
+  </house>
+  <house houseid="4" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="iron lion zion&#10;Badness of blood"/>
+  </house>
+  <house houseid="5" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="son of kyon&#10;"/>
+  </house>
+  <house houseid="6" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Sorcin Bonitinha"/>
+    <accesslist listid="257" text="Sorcin Bonitinha"/>
+  </house>
+  <house houseid="7" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Darkness Druid&#10;Pinoia"/>
+  </house>
+  <house houseid="8" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Intact Mage&#10;Trust Dragonweek&#10;"/>
+  </house>
+  <house houseid="9" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Arbalest Woman&#10;Soren Lorence&#10;Rick The Sorc&#10;RickZ&#10;Macumbera&#10;Son of Chaosruler&#10;Chaosruler&#10;Pestitisheck&#10;Shoyu&#10;Soren&#10;Black Of Sorcerer&#10;Merdinha&#10;Cancell&#10;Zoinhox&#10;Wylson Vai&#10;Ximper&#10;Amaziv&#10;Jaden&#10;Wolverine&#10;JanasDark&#10;Royal Paladin&#10;Lord kina&#10;the myth&#10;Smoke&#10;Aldo Avast&#10;Junkie&#10;feni kalix&#10;Jaden&#10;Lanph&#10;NeoN Knight&#10;PhOdA&#10;Trinidad&#10;Knight foda&#10;Ero&#10;LunKs&#10;Account Manager&#10;Shawdocan&#10;Xandojk"/>
+    <accesslist listid="257" text="Noob Saibot&#10;Arbalest Woman&#10;Soren Lorence&#10;Soren&#10;Wilson Vai&#10;ero&#10;mega paly &#10;trinidad&#10;Kirk Harmeth&#10;NeoN Knight&#10;Wolverine&#10;Royal Paladin&#10;Lord kina&#10;Adrenaline e Away&#10;HellBoy&#10;LoRaO&#10;Snob&#10;Okina&#10;ManGaNao&#10;Vanessa Fox&#10;Masterhitt&#10;Megam&#10;Archerzito&#10;RooTs&#10;Kirk Harmeth&#10;Strider rOOts&#10;Obelisk Darkness&#10;Amaziv&#10;Ximper&#10;Gustavo&#10;Knu&#10;Aldo Avast&#10;Junkie&#10;Knstrasskina&#10;Jorge Pally&#10;Okinapaladin of paladin&#10;Fiximen&#10;Kina Rox&#10;Kirk Harmeth&#10;Talibas&#10;Master hitt&#10;the myth&#10;Ero&#10;Hagujinko&#10;JanasDark&#10;King Sorc&#10;Xandojk&#10;HellBoy&#10;Knight foda&#10;ChuqNorris&#10;FLOR&#10;eze&#10;LunKs&#10;ManGaNao&#10;Fiximen&#10;guinter&#10;Knight War Lord&#10;GOD Brolly&#10;Peko&#10;Jaden&#10;Skyloko&#10;ToMeKs&#10;smoke&#10;eze&#10;LunKs&#10;ManGaNao&#10;Paladin of Paladin&#10;guinter&#10;Caos&#10;Kina Rox&#10;LorD BouSeR&#10;Royall Pala&#10;GOD Brolly&#10;Peko&#10;Xandojk&#10;the myth&#10;Moob&#10;Joca&#10;Lord kina&#10;Marlon&#10;PhOdA&#10;Knight foda&#10;Skyloko&#10;gustavo&#10;ramone&#10;LoRd EdInHo&#10;Vanessa Fox&#10;Chorao Viper&#10;Pskonejott&#10;Gustavo&#10;Pozin&#10;Mosufete&#10;Ronaldinho Gaucho&#10;vitera mt loko&#10;Ze&#10;Dark Pally&#10;Kina Bloker&#10;Ayrton&#10;MaXimz&#10;sTyLe&#10;Sonick&#10;Xandojk&#10;Eternal Oblivion"/>
+  </house>
+  <house houseid="10" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Setzer Gambler&#10;"/>
+  </house>
+  <house houseid="11" owner="" paid="0" warnings="0"/>
+  <house houseid="12" owner="" paid="0" warnings="0"/>
+  <house houseid="13" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="rosenildo&#10;Armed and Dangerous&#10;keen&#10;kina of kaos"/>
+    <accesslist listid="257" text="Celhar&#10;"/>
+  </house>
+  <house houseid="14" owner="" paid="0" warnings="0"/>
+  <house houseid="15" owner="" paid="0" warnings="0"/>
+  <house houseid="16" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Gator Roper"/>
+    <accesslist listid="257" text="Gator Roper&#10;&#10;"/>
+  </house>
+  <house houseid="17" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Chaosruler&#10;Bob UE &#10;HiDieBye &#10;Soren Lorence &#10;Sky Shoter &#10;Sir corn &#10;Mamoninha &#10;Phoenix &#10;Sky bolter&#10;Pestitisheck&#10;ZekaTokinha Revenge&#10;kyon hisss&#10;Gothmag&#10;taifun devyri"/>
+  </house>
+  <house houseid="25" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Vinny"/>
+  </house>
+  <house houseid="26" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="KiD Begala&#10;Na Jaca"/>
+  </house>
+  <house houseid="28" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="xP&#10;"/>
+    <accesslist listid="257" text="Zorkz&#10;xP&#10;Eternal Oblivion&#10;"/>
+  </house>
+  <house houseid="29" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Sorc Rox&#10;Skol"/>
+    <accesslist listid="257" text="Lorao"/>
+  </house>
+  <house houseid="30" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Aldo Avast&#10;&#10;"/>
+    <accesslist listid="257" text="kina of chaos&#10;chaos of pala"/>
+  </house>
+  <house houseid="31" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Phell Bulock&#10;Figaro"/>
+  </house>
+  <house houseid="32" owner="" paid="0" warnings="0"/>
+  <house houseid="33" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Knight Boo"/>
+    <accesslist listid="257" text="Knight Boo"/>
+  </house>
+  <house houseid="34" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Bohemia"/>
+    <accesslist listid="257" text="Bohemia"/>
+  </house>
+  <house houseid="35" owner="" paid="0" warnings="0"/>
+  <house houseid="36" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="&#10;"/>
+  </house>
+  <house houseid="37" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Thody"/>
+  </house>
+  <house houseid="38" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Mega Paly&#10;&#10;"/>
+  </house>
+  <house houseid="39" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Timy pally&#10;"/>
+  </house>
+  <house houseid="40" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Dhjoga X"/>
+    <accesslist listid="257" text="Dhjoga X"/>
+  </house>
+  <house houseid="41" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Plockz&#10;Klansh"/>
+    <accesslist listid="257" text="Klansh&#10;Plockz"/>
+  </house>
+  <house houseid="42" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Archerzito&#10;Lord kina&#10;Bielzinhu&#10;"/>
+    <accesslist listid="257" text="Archerzito&#10;"/>
+  </house>
+  <house houseid="43" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="GM Chaos&#10;Chaos Tox&#10;Sir Corn&#10;Soren&#10;ThuNdEr FoX&#10;Theodoric Isonomia&#10;"/>
+    <accesslist listid="257" text="LoRaO&#10;"/>
+  </house>
+  <house houseid="44" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Archerzito&#10;Lord Pally&#10;"/>
+    <accesslist listid="257" text="Arxherzito&#10;"/>
+  </house>
+  <house houseid="45" owner="" paid="0" warnings="0"/>
+  <house houseid="46" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Venon Yep&#10;Cancell"/>
+    <accesslist listid="257" text="Venon Yep"/>
+  </house>
+  <house houseid="47" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Sir ViNnY"/>
+  </house>
+  <house houseid="48" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="bhell bullock&#10;"/>
+  </house>
+  <house houseid="49" owner="" paid="0" warnings="0"/>
+  <house houseid="50" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="X x X"/>
+    <accesslist listid="257" text="X x X"/>
+  </house>
+  <house houseid="51" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="ToSkItA"/>
+  </house>
+  <house houseid="52" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Lord Paulistinha&#10;"/>
+  </house>
+  <house houseid="53" owner="" paid="0" warnings="0"/>
+  <house houseid="54" owner="" paid="0" warnings="0"/>
+  <house houseid="55" owner="" paid="0" warnings="0"/>
+  <house houseid="56" owner="" paid="0" warnings="0"/>
+  <house houseid="57" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="CanCell&#10;Te Como&#10;Me Come"/>
+  </house>
+  <house houseid="58" owner="" paid="0" warnings="0"/>
+  <house houseid="59" owner="" paid="0" warnings="0"/>
+  <house houseid="60" owner="" paid="0" warnings="0"/>
+  <house houseid="61" owner="" paid="0" warnings="0"/>
+  <house houseid="62" owner="" paid="0" warnings="0"/>
+  <house houseid="63" owner="" paid="0" warnings="0"/>
+  <house houseid="64" owner="" paid="0" warnings="0"/>
+  <house houseid="65" owner="" paid="0" warnings="0"/>
+  <house houseid="66" owner="" paid="0" warnings="0"/>
+  <house houseid="67" owner="" paid="0" warnings="0"/>
+  <house houseid="68" owner="" paid="0" warnings="0"/>
+  <house houseid="69" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Son of Chaosruler"/>
+  </house>
+  <house houseid="70" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Dredz"/>
+  </house>
+  <house houseid="71" owner="" paid="0" warnings="0"/>
+  <house houseid="72" owner="" paid="0" warnings="0"/>
+  <house houseid="73" owner="" paid="0" warnings="0"/>
+  <house houseid="74" owner="" paid="0" warnings="0">
+    <accesslist listid="257" text="GM Knu&#10;GOD Brolly&#10;JuJuzinha"/>
+  </house>
+  <house houseid="75" owner="" paid="0" warnings="0"/>
+  <house houseid="76" owner="" paid="0" warnings="0"/>
+  <house houseid="77" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Capt Ruin"/>
+  </house>
+  <house houseid="78" owner="" paid="0" warnings="0"/>
+  <house houseid="79" owner="" paid="0" warnings="0"/>
+  <house houseid="80" owner="" paid="0" warnings="0"/>
+  <house houseid="81" owner="" paid="0" warnings="0"/>
+  <house houseid="82" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="BoB rOOts"/>
+    <accesslist listid="257" text="BoB rOOts"/>
+  </house>
+  <house houseid="83" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="mosquito zarte"/>
+  </house>
+  <house houseid="84" owner="" paid="0" warnings="0"/>
+  <house houseid="85" owner="" paid="0" warnings="0">
+    <accesslist listid="256" text="Royal Pinota"/>
+  </house>
+</houses>

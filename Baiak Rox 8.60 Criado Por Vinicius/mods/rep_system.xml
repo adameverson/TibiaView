@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NECESSARY SQL QUERY FOR THE REPUTATION SYSTEM
+MySQL: ALTER TABLE `players` ADD `rep` INT( 11 ) NOT NULL DEFAULT '0';
+SQLite: ALTER TABLE "players" ADD "rep" INT( 11 ) NOT NULL DEFAULT "0";
+CREDITS: Sync.darkhaos.Colandus.Shawak.Absolute Mango.nsanee -->
+<mod name="Cyber's REPutation System" revision="5.0" author="Cybermaster" contact="otland.net" enabled="no">
+
+<config name="repSystem"><![CDATA[
+rep = {
+	--[[ GLOBAL CONFIG ]]--
+	interval = 6 * 60 * 60, --This is [6] hours, in seconds. Time between rep.
+	lastTime = 5136, --Used to store the player's last Rep Timestamp
+	lastName = 5138, --Used to store the last repped's GUID
+	minLevel = 20, --From this level onwards player can use commands
+	pvpLevel = 30, --Minimum level for PVP Rep'ing
+	skull = {4,5}, --these skulled player won't receive rep when killing
+
+	getArticle = function(cid, uppercase) 
+		return getPlayerSex(cid) == 0 and (uppercase and 'S' or 's') ..'he' or (uppercase and 'H' or 'h') ..'e' 
+	end,
+	
+	getPoints = function(cid)
+		local Info = db.getResult("SELECT `rep` FROM `players` WHERE `id` = " .. getPlayerGUID(cid) .. ";")
+		local rep = Info:getDataInt("rep")
+		Info:free()
+		return rep
+	end,
+	
+	getPower = function(points) 
+		local power = {{0,2},{300,3},{500,4},{1000,5},{1500,6},{2000,8},{5000,10}}
+		table.sort(power, function(a, b) return a[1] > b[1] end)
+		for _, t in ipairs(power) do    
+			if(math.abs(points) >= t[1]) then
+				return t[2]
+			end
+		end
+		return power[1][2]
+	end,
+	
+	getRank = function(points)
+		local ranks = {
+			{-5000, 'Power Abuser (*<<==========)'},
+			{-2000, 'Evil (=*<==========)'},
+			{-1500, 'Slayer (==*==========)'},
+			{-1000, 'Killer (===|=========)'},
+			{-500, 'Villain (====|========)'},
+			{-300, 'Creeping (======|======)'},
+			{-299, 'Unknown (======|======)'},
+			{300, 'Avowed (=======|=====)'},
+			{500, 'Popular (========|====)'},
+			{1000, 'Hailed (=========|===)'},
+			{1500, 'Acclaimed (==========+==)'},
+			{2000, 'Hero (==========>+=)'},
+			{5000, 'Legend (==========>>+)'},
+        }
+		if points > -1 then
+			table.sort(ranks, function(a, b) return a[1] > b[1] end)
+			for _, t in ipairs(ranks) do if points >= t[1] then return t[2] end end
+		else
+			table.sort(ranks, function(a, b) return a[1] < b[1] end)
+			for _, t in ipairs(ranks) do if points <= t[1] then return t[2] end end
+		end		
+	return ranks[1][2]
+	end,
+	
+	set = function(cid, points) 
+		db.executeQuery("UPDATE `players` SET `rep` = " .. points .. " WHERE `id` = " .. getPlayerGUID(cid) .. ";") 
+	end,
+
+	add = function(cid, amount, color)
+		db.executeQuery("UPDATE `players` SET `rep` = `rep` + " .. amount .. " WHERE `id` = " .. getPlayerGUID(cid) .. ";")
+		doSendAnimatedText(getCreaturePosition(cid), '+REP', color)
+		doPlayerSendCancel(cid,'You have just been hailed and gained '.. amount ..' reputation points.')
+	end,
+	
+	remove = function(cid, amount, color)
+		db.executeQuery("UPDATE `players` SET `rep` = `rep` - " .. amount .. " WHERE `id` = " .. getPlayerGUID(cid) .. ";")
+		doSendAnimatedText(getCreaturePosition(cid), '-REP', color)
+		doPlayerSendCancel(cid,'You have just been repudiated and lost '.. amount ..' reputation points.')
+	end,
+
+	getTime = function(timeDiff)
+		local dateFormat = {
+			{'h', timeDiff / 60 / 60 % 6},
+			{'m', timeDiff / 60 % 60},
+		}
+		local out = {}
+		for k, t in ipairs(dateFormat) do
+			local v = math.floor(t[2])
+			if(v > 0) then
+				table.insert(out, (k < #dateFormat and '' or ' and ') .. v .. '' .. t[1])
+			end
+		end
+	return table.concat(out)
+	end,  
+	
+	formatNum = function(str, sep)
+		str = tostring(str):reverse()
+		str = str:gsub("(%d)(%d)(%d)", '%1%2%3' .. (sep or " "), math.ceil(str:len() / 3)-1)
+    return str:reverse()
+	end,
+}]]>
+</config>
+       
+<event type="login" name="repRegister" event="script"><![CDATA[
+	function onLogin(cid)
+		registerCreatureEvent(cid, "repLook")  
+        registerCreatureEvent(cid, "repKill")  
+        registerCreatureEvent(cid, "repMonster")
+    return true
+    end]]>
+</event>
+       
+<event type="look" name="repLook" event="script"><![CDATA[
+	domodlib('repSystem')
+    function onLook(cid, thing, position, lookDistance)
+		if isPlayer(thing.uid) then 
+			doPlayerSetSpecialDescription(thing.uid,'.\n' .. (thing.uid == cid and 'You are' or rep.getArticle(thing.uid, true) .. ' is') .. ' ' .. rep.getRank(rep.getPoints(thing.uid)))
+		end            
+	return true
+	end]]>
+</event>
+               
+<event type="kill" name="repKill" event="script"><![CDATA[
+	domodlib('repSystem')
+	local t = {
+	[SKULL_WHITE] = 15, 
+	[SKULL_RED] = 30, 
+	[SKULL_BLACK] = 45, 
+	[SKULL_NONE] = -30,
+	}
+
+	function onKill(cid, target, lastHit)
+		if isPlayer(cid) and isPlayer(target) then
+		--THE KILLER 
+			if isInArray({0,3,4,5}, getCreatureSkullType(target)) then
+				if getPlayerLevel(target) >= rep.pvpLevel and not isInArray(rep.skull, getCreatureSkullType(cid)) then
+					doSendAnimatedText(getCreaturePosition(cid), getCreatureSkullType(target) == 0 and '-REP' or '+REP', math.random(1,255))
+					rep.set(cid, rep.getPoints(cid)+t[getCreatureSkullType(target)])
+					doPlayerSendTextMessage(cid, 20, 'You '.. (getCreatureSkullType(target) == 0 and 'lose' or 'gain') ..' reputation because you killed a player.')
+				end
+			end
+		--THE VICTIM
+			if rep.getPoints(target) == 0 then 
+				return true
+			elseif rep.getPoints(target) > 0 then
+				rep.remove(target, 5, TEXTCOLOR_RED)
+				doPlayerSendTextMessage(target, 20, 'You lose reputation because you were killed by a player.')
+			else
+				rep.add(target, 5, TEXTCOLOR_LIGHTBLUE)
+				doPlayerSendTextMessage(target, 20, 'You lose reputation because you were killed by a player.')
+			end
+		end
+	return true
+	end]]>
+</event>
+               
+<event type="kill" name="repMonster" event="script"><![CDATA[
+	domodlib('repSystem')
+	function onKill(cid, target, lastHit)
+		if not isPlayer(cid) or not isMonster(target) then
+			return true
+		end
+
+		local monsters = {
+			["demon"] = 3,
+			["behemoth"] = 4,
+			["hellfire fighter"] = 5,
+			["orshabaal"] = 10,
+		}
+		
+		local name = getCreatureName(target)
+		local monster = monsters[string.lower(name)]
+		
+		if monster then
+			rep.add(cid, monsters[string.lower(getCreatureName(target))], TEXTCOLOR_LIGHTBLUE)
+		end
+	return true
+	end]]>
+</event>
+       
+<talkaction log= "yes" words="/hail;/fuck;/set" access="4" event="buffer"><![CDATA[
+    domodlib('repSystem')
+	
+		if param == '' then
+			doPlayerSendCancel(cid,'You must write a player\'s name.')
+		return true
+		end
+
+		local t = string.explode(param, ',')
+		local tid = getPlayerByName(t[1])
+
+		if not isPlayer(tid) then
+			doPlayerSendCancel(cid, 'Player ' .. param .. ' not found or is not online.')
+		return true
+		end
+       
+		if not t[2] and isPlayer(tid) then  
+			if words == '/hail' then
+				rep.add(tid, 5, TEXTCOLOR_TEAL)
+				doPlayerSendCancel(cid, 'You added +5 rep points to ' .. getPlayerName(tid) .. ', and now ' .. rep.getArticle(tid, false) .. ' has ' .. rep.getPoints(tid) .. ' points.')
+			return true
+			end
+               
+			if words == '/fuck' then
+				rep.remove(tid, 5, TEXTCOLOR_RED)
+				doPlayerSendCancel(cid, 'You removed -5 rep points to ' .. getPlayerName(tid) .. ', and now ' .. rep.getArticle(tid, false) .. ' has ' .. rep.getPoints(tid) .. ' points.')
+			return true
+			end
+		end
+       
+		if t[2] and isInArray({'/set','/hail','fuck'}, words) then
+			if not tonumber(t[2]) then
+				doPlayerSendCancel(cid, 'Reputation amount is invalid.')
+			return true
+			end                                    
+		end
+       
+		if words == '/hail' then
+			rep.add(tid, t[2], TEXTCOLOR_TEAL)
+			doPlayerSendCancel(cid, 'You added ' .. t[2] .. ' rep points to ' .. getPlayerName(tid) .. ', and now ' .. rep.getArticle(tid, false) .. ' has ' .. rep.getPoints(tid) .. ' points.')
+		return true
+		end
+               
+		if words == '/fuck' then
+			rep.remove(tid, t[2], TEXTCOLOR_RED)
+			doPlayerSendCancel(cid, 'You removed ' .. t[2] .. ' rep points to ' .. getPlayerName(tid) .. ', and now ' .. rep.getArticle(tid, false) .. ' has ' .. rep.getPoints(tid) .. ' points.')
+		return true
+		end
+               
+		if t[2] and words == '/set' then
+			rep.set(tid, t[2])
+			doPlayerSendCancel(cid, 'You have set ' .. getPlayerName(tid) .. '\'s points to ' .. rep.getPoints(tid))
+		else
+			doPlayerSendCancel(cid, 'Absolute reputation amount not specified.')
+		return true
+		end
+       
+		if not t[2] then
+			doPlayerSendCancel(cid, 'Absolute reputation amount not specified.')
+		return true
+		end	
+	return true]]>
+</talkaction>
+       
+<talkaction words="!ranks" event="buffer"><![CDATA[
+	domodlib('repSystem')
+		local players = 10 
+		local str, value, name, result = "","","",0,nil
+        if isInArray({'hero','pos','1','+'}, param) then
+			str,value,name = "[#]-[Name]-[Points]-[Rank]\n--[Positive Rep Highscores]--\n","rep","name"
+            result = db.getResult("SELECT `name`, `rep` FROM `players` WHERE `rep` > -1 AND `id` > 6 AND `group_id` < 2 ORDER BY `rep` DESC, `name` ASC;")
+        elseif isInArray({'evil','neg','2','-'}, param) then
+            str,value,name = "[#]-[Name]-[Points]-[Rank]\n--[Negative Rep Highscores]--\n","rep","name"
+            result = db.getResult("SELECT `name`, `rep` FROM `players` WHERE `rep` < 0 AND `id` > 6 AND `group_id` < 2 ORDER BY `rep` ASC, `name` DESC;")    
+        else
+             doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Unknown Paramater: '" .. param .. "'")
+             return true
+        end
+
+        if (result:getID() ~= -1) then
+			local i = 1
+            while true do
+				str = str .. "\n " .. i .. ". " .. result:getDataString("name") .. " - [" .. result:getDataInt(value) .. "] - " .. rep.getRank(result:getDataInt(value)) .. ""
+                i = i+1
+                if not(result:next()) or i > players then
+					break
+                end
+            end
+            result:free()
+        end
+        if str ~= "" then
+			doPlayerPopupFYI(cid, str)
+        end
+	return true]]>
+</talkaction>
+       
+<talkaction words="!rep" event="buffer"><![CDATA[
+    domodlib('repSystem')
+		local points, lastName, action = rep.getPoints(cid), getPlayerStorageValue(cid, rep.lastName), false
+		doPlayerSendTextMessage(cid, 19, 'You have ' .. rep.formatNum(points, ",")  .. ' reputation points. You are ' .. rep.getRank(points) .. '\nYour Rep Power is ' .. rep.getPower(points) ..'. ' .. (getPlayerStorageValue(cid, rep.lastName) ~= -1 and 'You last reputed ' .. getPlayerNameByGUID(lastName) .. '.' or ''))
+ 
+		if points > 4999 then --female rep+++ queen outfit
+			disguise, text, action = (getPlayerSex(cid) == 0 and {lookType = 331} or {lookType = 332}), (getPlayerSex(cid) == 0 and 'Queen!!' or 'King!!'), true
+		elseif points > 1999 then --rep++ cm outfit
+			disguise, text, action = {lookType = 73}, 'Hero!!', true
+		elseif points > 1499 then --rep+ hero outfit
+			disguise, text, action = {lookType = 63}, 'Acclaimed!!', true
+		elseif points < -4999 then --rep*** devil outfit
+			disguise, text, action = {lookType = 334}, 'P.O.!', true
+		elseif points < -1999  then --rep** pig outfit 
+			disguise, text, action = {lookType = 306}, 'Evil!!', true
+		elseif points < -1499 then --rep* orc outfit 
+			disguise, text, action = {lookType = 5}, "Slayer!!", true   
+		end
+		
+		if action and getCreatureOutfit(cid).lookType ~= disguise.lookType then
+			doSetCreatureOutfit(cid, disguise, -1)
+			doSendAnimatedText(getCreaturePosition(cid), text, math.random(1,255))
+		return true
+		end	
+	return true]]>
+</talkaction>
+       
+<talkaction words="!hail;!fuck" event="buffer"><![CDATA[
+	domodlib('repSystem')
+		if param == '' then 
+			doPlayerSendCancel(cid, 'Command requires a player\'s name.') 
+		return true 
+		end
+       
+		local target, oldTime = getPlayerByName(param), getPlayerStorageValue(cid, rep.lastTime)
+	
+		if not isPlayer(target) then 
+			doPlayerSendCancel(cid, 'That player does not exist or is offline.') 
+		return true 
+		end
+	
+		if oldTime == -1 then 
+			setPlayerStorageValue(cid, rep.lastTime, os.time()) 
+		end
+                                   
+		if getPlayerLevel(cid) < rep.minLevel then
+			doPlayerSendCancel(cid,'You may repute from level ' .. rep.minLevel ..' onwards.')
+		return true
+		end
+       
+		if getPlayerGUID(target) == getPlayerStorageValue(cid, rep.lastName) then
+			doPlayerSendCancel(cid, 'You may not repute that player two times in a row.')  
+		return true
+		end
+	
+		if (os.time() - oldTime) < rep.interval then
+			doPlayerSendCancel(cid, 'You may repute in ' .. rep.getTime(oldTime - os.time()) .. ' [' .. os.date("%b.%d %X", oldTime + rep.interval) ..']')
+		return true
+		end
+                    
+		if getPlayerIp(cid) == getPlayerIp(target) then
+			doPlayerSendCancel(cid, 'You may not repute neither yourself nor someone in your IP.')  
+		return true
+		end
+				
+		if words == '!hail' then
+			setPlayerStorageValue(cid, rep.lastName, getPlayerGUID(target))
+			rep.add(target, rep.getPower(cid), TEXTCOLOR_LIGHTBLUE)
+			setPlayerStorageValue(cid, rep.lastTime, os.time())
+			doPlayerSendCancel(cid, 'You have just reputed ' .. getCreatureName(target))
+		elseif words == '!fuck' then
+			setPlayerStorageValue(cid, rep.lastName, getPlayerGUID(target))
+			rep.remove(target, rep.getPower(cid), TEXTCOLOR_RED)
+			setPlayerStorageValue(cid, rep.lastTime, os.time())
+			doPlayerSendCancel(cid, 'You have just reputed ' .. getCreatureName(target))
+		end
+	return true]]>
+</talkaction>
+</mod>

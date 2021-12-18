@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="@ Seller Rox #" script="data/npc/scripts/default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="53" head="64" body="44" legs="42" feet="54" addons="3"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value="Baiakzik Sword,7959,20000000;Baiakzik Axe,10943,20000000;Baiakzik Star,12391,20000000;Baiakzik Club,12574,20000000;Baiakzik Staff,7735,20000000;"/>
+	</parameters>
+1</npc>
