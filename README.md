@@ -42,4 +42,5 @@
 #### imagem do server
 ![image](https://user-images.githubusercontent.com/24993219/146625809-ef8887a3-2f91-45e6-a829-b03e3f758de0.png)
 
-
+#### License
+Otclient is made available under the MIT License, thus this means that you are free to do whatever you want, commercial, non-commercial, closed or open.
